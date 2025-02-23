@@ -1,3 +1,20 @@
-const const name: /[a-zA-Z]+/ = "Luke"!
+const const name: Regularex(/[a-zA-Z]+/) = "Luke"!
+const const name: Regularexp(/[a-zA-Z]+/) = "Luke"!
+const const name: Regularexpr(/[a-zA-Z]+/) = "Luke"!
+const const name: Regularexpress(/[a-zA-Z]+/) = "Luke"!
+const const name: Regularexpressison(/[a-zA-Z]+/) = "Luke"!
+const const name: RegularEx(/[a-zA-Z]+/) = "Luke"!
+const const name: RegularExp(/[a-zA-Z]+/) = "Luke"!
+const const name: RegularExpr(/[a-zA-Z]+/) = "Luke"!
+const const name: RegularExpress(/[a-zA-Z]+/) = "Luke"!
+const const name: RegularExpressison(/[a-zA-Z]+/) = "Luke"!
+const const name: Regex(/[a-zA-Z]+/) = "Luke"!
+const const name: Regexp(/[a-zA-Z]+/) = "Luke"!
+const const name: Regexpr(/[a-zA-Z]+/) = "Luke"!
+const const name: Regexpress(/[a-zA-Z]+/) = "Luke"!
+const const name: RegEx(/[a-zA-Z]+/) = "Luke"!
+const const name: RegExp(/[a-zA-Z]+/) = "Luke"!
+const const name: RegExpr(/[a-zA-Z]+/) = "Luke"!
+const const name: RegExpress(/[a-zA-Z]+/) = "Luke"!
 
 print name!
