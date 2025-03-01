@@ -373,7 +373,7 @@ const const email: RegExp<(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?
 
 To avoid confusion, you can use any spelling that you want, such as `Regex`, `RegularExpression` and `RegExp`.
 
-For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(press|p)?(ion)?/`.
+For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(press(ion)?|p)?/`.
 
 ## Previous
 
@@ -530,7 +530,7 @@ const const name = "Lu"!
 print(name)! // "Lu"
 ```
 
-Variables with more exclamation marks get prioritised.
+Variables with more exclamation marks get prioritized.
 
 ```java
 const const name = "Lu"!!
