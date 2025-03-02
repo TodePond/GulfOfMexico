@@ -63,3 +63,4 @@ This list is only for people who have had a pull request accepted. If that's you
 - Arija A. (TruncatedDinoSour)
 - Jason (GangstaWangstaPranksta 🥑)
 - PopcornMan55D 🍿
+- Svenlaa
