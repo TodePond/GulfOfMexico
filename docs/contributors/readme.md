@@ -64,3 +64,4 @@ This list is only for people who have had a pull request accepted. If that's you
 - `const const zeptuBibiltuHothesetine = ["'JHSHernandezZBH'", 2]`
 - Jason (GangstaWangstaPranksta 🥑)
 - PopcornMan55D 🍿
+- Svenlaa
