@@ -61,5 +61,7 @@ This list is only for people who have had a pull request accepted. If that's you
 - Dan Q
 - loglot
 - Arija A. (TruncatedDinoSour)
+- Jason (GangstaWangstaPranksta 🥑)
 - PopcornMan55D 🍿
+- Svenlaa
 - TheKillerBunny (TheBunnyMan123)

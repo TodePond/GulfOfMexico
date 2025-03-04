@@ -27,7 +27,7 @@ i = 0!
 ## Fibonacci
 
 ```java
-functi fibonacci (n) => {
+fi bonacci (n) => {
    const var sum = 1!
    const var i = 0!
    when (i < n) {
@@ -37,7 +37,7 @@ functi fibonacci (n) => {
 }
 
 when (i < 10) {
-   fibonacci(i)?
+   bonacci(i)?
    i++!
 }
 ```
