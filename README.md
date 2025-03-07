@@ -868,3 +868,6 @@ Gulf of Mexico was made with 💔 by [Lu or Luke (either's fine) Wilson](https:/
   <img src="https://contrib.rocks/image?repo=todepond/dreamberd&max=999&columns=12" width="100%"/>
 </a>
 
+## Disclaimer
+
+May contain nuts. 
