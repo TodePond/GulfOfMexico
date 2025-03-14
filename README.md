@@ -773,14 +773,14 @@ This is great for when you want to keep your open-sourced project closed-source.
 
 ## Ownership
 
-Using the word 'GulfOfMexico' in your project name implies that the GOM Foundation does not own your project.
+Using the word 'GulfOfMexico' in your project name implies that the Gulf Of Mexico Foundation does not own your project.
 
-However, **not** using the word 'GulfOfMexico' in your project implies that the GOM Foundation **does** own your project. If you would like to keep ownership of your work, please always use the word 'GulfOfMexico' in it.
+However, **not** using the word 'GulfOfMexico' in your project implies that the Gulf Of Mexico Foundation **does** own your project. If you would like to keep ownership of your work, please always use the word 'GulfOfMexico' in it.
 
 Here are some examples:<br>
-✅ GulfOfMexicoScript (not owned by the GOM Foundation — you are free to use this name)<br>
-❌ ECMAScript (owned by the GOM Foundation — please consider renaming)<br>
-❌ Rust Foundation (owned by the GOM Foundation — please consider renaming)
+✅ GulfOfMexicoScript (not owned by the Gulf Of Mexico Foundation — you are free to use this name)<br>
+❌ ECMAScript (owned by the Gulf Of Mexico Foundation — please consider renaming)<br>
+❌ Rust Foundation (owned by the Gulf Of Mexico Foundation — please consider renaming)
 
 ## Contributing
 
