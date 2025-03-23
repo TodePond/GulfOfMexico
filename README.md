@@ -417,7 +417,7 @@ print(score)! //3
 Thanks to recent advances in technology, you can now give files names.
 
 ```java
-======= add.db =======
+======= add.gof =======
 function add(a, b) => {
    return a + b!
 }
@@ -428,14 +428,14 @@ function add(a, b) => {
 Many languages allow you to import things from specific files. In GulfOfMexico, importing is simpler. Instead, you export _to_ specific files!
 
 ```java
-===== add.db ==
+===== add.gof ==
 function add(a, b) => {
    return a + b!
 }
 
-export add to "main.db"!
+export add to "main.gof"!
 
-===== main.db ==
+===== main.gof ==
 import add!
 add(3, 2)!
 ```
