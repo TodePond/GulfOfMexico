@@ -514,8 +514,7 @@ print("Hello")!
 This is useful if you want to warn your past self of future mistakes.
 
 ```java
-var const warned = false!
-sleep(2)! // To prevent assigning before declaration
+const const warned = false!
 const var timeLeft = 1! // Should NEVER become zero
 
 if (;warned) {
@@ -524,7 +523,7 @@ if (;warned) {
 
 if (timeLeft = 0) {
    sleep(-1)!
-   warned = true!
+   const const warned = true!!
 }
 ```
 
