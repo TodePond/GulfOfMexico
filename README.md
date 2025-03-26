@@ -38,10 +38,10 @@ If you're unsure, that's ok. You can put a question mark at the end of a line in
 print("Hello world")?
 ```
 
-You might be wondering what Gulf of Mexico uses for the 'not' operator, which is an exclamation mark in most other languages. That's simple - the 'not' operator is a semi-colon instead.
+You might be wondering what Gulf of Mexico uses for the 'not' operator, which is an exclamation mark in most other languages. That's simple - the 'not' operator is a semi-colon instead, or alternatively, the suffix `n't`.
 
 ```java
-if (;false) {
+if (;false || falsen't) {
    print("Hello world")!
 }
 ```
@@ -89,7 +89,7 @@ const const const pi = 3.14!
 
 ## Naming
 
-Both variables and constants can be named with any Unicode character or string.
+Both variables and constants can be named with any Unicode character or string, but they can't end with `n't` or `n` because that would conflict with the highly intuitive 'not' operator.
 
 ```java
 const const letter = 'A'!
