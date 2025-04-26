@@ -263,7 +263,7 @@ If you want to be much less precise, you can use `=`.
 
 ## Functions
 
-To declare a function, you can use any letters from the word `function` (as long as they're in order):
+To declare a function, you can use any letters from the word `function` (as long as they're in order (and not empty)):
 
 ```java
 function add(a, b) => a + b!
