@@ -66,14 +66,14 @@ Variable constants can be re-assigned, but not edited.
 
 ```java
 var const name := "Luke"!
-name = "Lu"!
+name := "Lu"!
 ```
 
 Variable variables can be re-assigned and edited.
 
 ```java
 var var name := "Luke"!
-name = "Lu"!
+name := "Lu"!
 name.push("k")!
 name.push("e")!
 ```
