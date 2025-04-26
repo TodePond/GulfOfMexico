@@ -53,7 +53,6 @@ There are four types of declaration. Constant constants can't be changed in any 
 ```java
 const const name := "Luke"!
 ```
-
 Constant variables can be edited, but not re-assigned.
 
 ```java
@@ -89,7 +88,6 @@ const const const pi := 3.14!
 Due to inconsistencies, the assignment operator has changed from `=` to `:=`.
 
 ## Naming
-
 Both variables and constants can be named with any Unicode character or string.
 
 ```java
@@ -260,6 +258,24 @@ If you want to be much less precise, you can use `=`.
 ```java
 3 = 3.14! //true
 ```
+
+## Error Handling
+
+By default, `errors` is set to true.
+
+If you add 
+
+```java
+delete errors!
+```
+
+or
+
+```java
+const const errors = false!
+```
+
+to the top of your code, it will either run flawlessly or redirect the request to disneychannel.ca.
 
 ## Functions
 
