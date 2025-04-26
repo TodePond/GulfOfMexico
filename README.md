@@ -261,7 +261,7 @@ If you want to be much less precise, you can use `=`.
 
 ## Error Handling
 
-By default, `errors` is set to true.
+By default, the internal global variable `errors` is set to true.
 
 If you add 
 
