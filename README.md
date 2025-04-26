@@ -433,7 +433,8 @@ function add(a, b) => {
 Many languages allow you to import things from specific files. In GulfOfMexico, importing is simpler. Instead, you export _to_ specific modules!
 
 ```java
-===== add =====
+
+===== add.gom ==
 function add(a, b) => {
    return a + b!
 }
@@ -861,7 +862,7 @@ Gulf of Mexico was made with 💔 by [Lu or Luke (either's fine) Wilson](https:/
 
 <br>
 
-<a href="https://github.com/todepond/dreamberd/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=todepond/dreamberd&max=999&columns=12" width="100%"/>
+<a href="https://github.com/todepond/GulfOfMexico/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=todepond/GulfOfMexico&max=999&columns=12" width="100%"/>
 </a>
 
