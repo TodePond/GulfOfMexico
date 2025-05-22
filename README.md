@@ -3,7 +3,7 @@
 If you're reading this then you might be looking for the hidden examples page...
 
 CONGRATULATIONS! You found it!
-Here it is: https://github.com/TodePond/GulfOfMexico/blob/main/res/res/Examples.md
+Here it is: https://github.com/TodePond/GulfOfMexico/blob/main/LICENSE.md
 
 -->
 
@@ -51,13 +51,12 @@ if (;false) {
 There are four types of declaration. Constant constants can't be changed in any way.
 
 ```java
-const const name = "Luke"!
+const const name := "Luke"!
 ```
-
 Constant variables can be edited, but not re-assigned.
 
 ```java
-const var name = "Luke"!
+const var name := "Luke"!
 name.pop()!
 name.pop()!
 ```
@@ -65,42 +64,42 @@ name.pop()!
 Variable constants can be re-assigned, but not edited.
 
 ```java
-var const name = "Luke"!
-name = "Lu"!
+var const name := "Luke"!
+name := "Lu"!
 ```
 
 Variable variables can be re-assigned and edited.
 
 ```java
-var var name = "Luke"!
-name = "Lu"!
+var var name := "Luke"!
+name := "Lu"!
 name.push("k")!
 name.push("e")!
 ```
-
-## Immutable Data
 
 **New for 2023!**<br>
 Mutable data is an anti-pattern. Use the `const const const` keyword to make a constant constant constant. Its value will become constant and immutable, and will _never change_. Please be careful with this keyword, as it is very powerful, and will affect all users globally forever.
 
 ```java
-const const const pi = 3.14!
+const const const pi := 3.14!
 ```
 
-## Naming
+**New for 2025!**<br>
+Due to inconsistencies, the assignment operator has changed from `=` to `:=`.
 
+## Naming
 Both variables and constants can be named with any Unicode character or string.
 
 ```java
-const const letter = 'A'!
-var const 👍 = True!
-var var 1️⃣ = 1!
+const const letter := 'A'!
+var const 👍 := True!
+var var 1️⃣ := 1!
 ```
 
 This includes numbers, and other language constructs.
 
 ```java
-const const 5 = 4!
+const const 5 := 4!
 print(2 + 2 === 5)! //true
 ```
 
@@ -109,7 +108,7 @@ print(2 + 2 === 5)! //true
 Some languages start arrays at `0`, which can be unintuitive for beginners. Some languages start arrays at `1`, which isn't representative of how the code actually works. Gulf of Mexico does the best of both worlds: Arrays start at `-1`.
 
 ```java
-const const scores = [3, 2, 5]!
+const const scores := [3, 2, 5]!
 print(scores[-1])! //3
 print(scores[0])!  //2
 print(scores[1])!  //5
@@ -119,8 +118,8 @@ print(scores[1])!  //5
 You can now use floats for indexes too!
 
 ```java
-const var scores = [3, 2, 5]!
-scores[0.5] = 4!
+const var scores := [3, 2, 5]!
+scores[0.5] := 4!
 print(scores)! //[3, 2, 4, 5]
 ```
 
@@ -129,7 +128,7 @@ print(scores)! //[3, 2, 4, 5]
 In case you really need to vary a variable, the `when` keyword lets you check a variable each time it mutates.
 
 ```java
-const var health = 10!
+const var health := 10!
 when (health = 0) {
    print("You lose")!
 }
@@ -140,21 +139,21 @@ when (health = 0) {
 Gulf of Mexico has a built-in garbage collector that will automatically clean up unused variables. However, if you want to be extra careful, you can specify a lifetime for a variable, with a variety of units.
 
 ```java
-const const name<2> = "Luke"! //lasts for two lines
-const const name<20s> = "Luke"! //lasts for 20 seconds
+const const name<2> := "Luke"! //lasts for two lines
+const const name<20s> := "Luke"! //lasts for 20 seconds
 ```
 
 By default, a variable will last until the end of the program. But you can make it last in between program-runs by specifying a longer lifetime.
 
 ```java
-const const name<Infinity> = "Luke"! //lasts forever
+const const name<Infinity> := "Luke"! //lasts forever
 ```
 
 Variable hoisting can be achieved with this neat trick. Specify a negative lifetime to make a variable exist before its creation, and disappear after its creation.
 
 ```java
 print(name)! //Luke
-const const name<-1> = "Luke"!
+const const name<-1> := "Luke"!
 ```
 
 ## Loops
@@ -174,19 +173,19 @@ Due to the complicated installation process, you can now install the 'Create Gul
 Booleans can be `true`, `false` or `maybe`.
 
 ```java
-const var keys = {}!
-addEventListener("keydown", (e) => keys[e.key] = true)!
-addEventListener("keyup", (e) => keys[e.key] = false)!
+const var keys := {}!
+addEventListener("keydown", (e) => keys[e.key] := true)!
+addEventListener("keyup", (e) => keys[e.key] := false)!
 
 function isKeyDown(key) => {
-   if (keys[key] = undefined) {
+   if (keys[key] := undefined) {
       return maybe!
    }
    return keys[key]!
 }
 ```
 
-**Technical info:** Booleans are stored as one-and-a-half bits.
+**Technical info:** Booleans are stored as a quat, `0` for `false`, `1` for `maybe`, `2` for `true`, and `3` for `undefined`.
 
 ## Arithmetic
 
@@ -200,7 +199,7 @@ print(1+2 * 3)! //9
 Gulf of Mexico proudly supports fractions!
 
 ```java
-const const half = 1/2!
+const const half := 1/2!
 ```
 
 You can also use number names.
@@ -227,6 +226,8 @@ print("Gulf of Mexico is the future")!
    }
 ```
 
+Tabs are not allowed, as they are 2 or 4 spaces long.
+
 ## Equality
 
 JavaScript lets you do different levels of comparison. `==` for loose comparison, and `===` for a more precise check. Gulf of Mexico takes this to another level.
@@ -246,7 +247,7 @@ You can use `===` to do a more precise check.
 You can use `====` to be EVEN MORE precise!
 
 ```java
-const const pi = 3.14!
+const const pi := 3.14!
 print(pi ==== pi)! //true
 print(3.14 ==== 3.14)! //true
 print(3.14 ==== pi)! //false
@@ -258,17 +259,35 @@ If you want to be much less precise, you can use `=`.
 3 = 3.14! //true
 ```
 
+## Error Handling
+
+By default, the internal global variable `errors` is set to true.
+
+If you add 
+
+```java
+delete errors!
+```
+
+or
+
+```java
+const const errors = false!
+```
+
+to the top of your code, it will either run flawlessly or redirect the request to disneychannel.ca.
+
 ## Functions
 
-To declare a function, you can use any letters from the word `function` (as long as they're in order):
+To declare a function, you can use any letters from the word `function` (as long as they're in order (and not empty)):
 
 ```java
 function add(a, b) => a + b!
 func multiply(a, b) => a * b!
-fun subtract(a, b) => a - b!
+uion subtract(a, b) => a - b!
 fn divide(a, b) => a / b!
-functi power(a, b) => a ^ b!
-f inverse(a) => 1/a!
+f power(a, b) => a ^ b!
+union inverse(a) => 1/a!
 ```
 
 ## Dividing by Zero
@@ -284,27 +303,27 @@ print(3 / 0)! //undefined
 Strings can be declared with single quotes or double quotes.
 
 ```java
-const const name = 'Lu'!
-const const name = "Luke"!
+const const name := 'Lu'!
+const const name := "Luke"!
 ```
 
 They can also be declared with triple quotes.
 
 ```java
-const const name = '''Lu'''!
-const const name = "'Lu'"!
+const const name := '''Lu'''!
+const const name := "'Lu'"!
 ```
 
 In fact, you can use any number of quotes you want.
 
 ```java
-const const name = """"Luke""""!
+const const name := """"Luke""""!
 ```
 
 Even zero.
 
 ```java
-const const name = Luke!
+const const name := Luke!
 ```
 
 ## String Interpolation
@@ -312,7 +331,7 @@ const const name = Luke!
 Please remember to use your regional currency when interpolating strings.
 
 ```java
-const const name = "world"!
+const const name := "world"!
 print("Hello ${name}!")!
 print("Hello £{name}!")!
 print("Hello ¥{name}!")!
@@ -346,10 +365,10 @@ By the way, strings are just arrays of characters.
 String == Char[]!
 ```
 
-Similarly, integers are just arrays of digits.
+Similarly, integers are just arrays of booleans.
 
 ```java
-Int == Digit[]!
+Int == Bool[]!
 ```
 
 In case you want to use a binary representation for integers, `Int9` and `Int99` types are also available.
@@ -370,7 +389,7 @@ const const email: RegExp<(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?
 
 To avoid confusion, you can use any spelling that you want, such as `Regex`, `RegularExpression` and `RegExp`.
 
-For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(p(ression)?)?/`.
+For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(press(ion)?|p)?/`.
 
 ## Previous
 
@@ -399,9 +418,9 @@ const var score = 5!
 print(current score)! //5
 ```
 
-## File Structure
+## Modules
 
-Write five or more equals signs to start a new file. This removes the need for multiple files or any build process.
+If your script is a bundle, you can write five or more equals signs to start a new module. This removes the need for multiple files or any build process.
 
 ```java
 const const score = 5!
@@ -414,28 +433,31 @@ print(score)! //3
 ```
 
 **New for 2022!**<br>
-Thanks to recent advances in technology, you can now give files names.
+Thanks to recent advances in technology, you can now give modules names.
 
 ```java
-======= add.gom =======
+======= add =======
 function add(a, b) => {
    return a + b!
 }
 ```
 
+**Technical note**: When compiling a folder, it is converted into a bundle first before compiling.
+
 ## Exporting
 
-Many languages allow you to import things from specific files. In GulfOfMexico, importing is simpler. Instead, you export _to_ specific files!
+Many languages allow you to import things from specific files. In GulfOfMexico, importing is simpler. Instead, you export _to_ specific modules!
 
 ```java
+
 ===== add.gom ==
 function add(a, b) => {
    return a + b!
 }
 
-export add to "main.gom"!
+export add to "main"!
 
-===== main.gom ==
+===== main =====
 import add!
 add(3, 2)!
 ```
@@ -585,9 +607,9 @@ className Player {
 
 In response to some recent criticism about this design decision, we would like to remind you that this is part of the JavaScript specification, and therefore — out of our control.
 
-## DBX
+## DBHT
 
-You can embed DBX in GulfOfMexico. It's just GulfOfMexico. And it's also just HTML.
+You can embed DBHT in GulfOfMexico. It's just GulfOfMexico. And it's also just HTML.
 
 ```java
 funct App() => {
@@ -595,7 +617,7 @@ funct App() => {
 }
 ```
 
-**Warning:** As you know, `class` is already a keyword in GulfOfMexico, so you can't use it within DBX.
+**Warning:** As you know, `class` is already a keyword in GulfOfMexico, so you can't use it within DBHT.
 
 ```java
 funct App() => {
@@ -635,20 +657,14 @@ funct App() => {
 
 ## Rich text
 
-Gulf of Mexico now supports rich text.
+Gulf of Mexico supports rich text. It can be written in markdown, RTF, HTML, or any way you like.
 
 <pre>
-const const <b>name</b> = "Lu"!
-const const <i>name</i> = "Luke"!
+const const <b>name</b> := "Lu"!
+const const <i>name</i> := "Luke"!
 
 print(<b>name</b>)! // Lu
 print(<i>name</i>)! // Luke
-</pre>
-
-Rich text can be helpful when making your website. Use it to add links!
-
-<pre>
-&lt;p>Click <a href="https://dreamberd.computer">here</a>&lt;/p>
 </pre>
 
 ## Asynchronous Functions
@@ -686,7 +702,7 @@ print(3)!
 To use a signal, use `use`.
 
 ```java
-const var score = use(0)!
+const var score := use(0)!
 ```
 
 When it comes to signals, the most important thing to discuss is _syntax_.
@@ -694,7 +710,7 @@ When it comes to signals, the most important thing to discuss is _syntax_.
 In GulfOfMexico, you can set (and get) signals with just one function:
 
 ```java
-const var score = use(0)!
+const var score := use(0)!
 
 score(9)! // Set the value
 score()?  // Get the value (and print it)
@@ -703,7 +719,7 @@ score()?  // Get the value (and print it)
 Alternatively, you can be more explicit with your signal syntax, by splitting it into a getter and setter.
 
 ```java
-const var [getScore, setScore] = use(0)!
+const var [getScore, setScore] := use(0)!
 
 setScore(9)! // Set the value
 getScore()?  // Get the value (and print it)
@@ -712,7 +728,7 @@ getScore()?  // Get the value (and print it)
 **Technical info:** This is pure syntax sugar. The split signal functions are exactly the same as before.
 
 ```java
-const var [getScore, setScore] = use(0)!
+const var [getScore, setScore] := use(0)!
 
 getScore(9)! // Set the value
 setScore()?  // Get the value (and print it)
@@ -721,10 +737,10 @@ setScore()?  // Get the value (and print it)
 This means that you can carry on splitting as much as you like.
 
 ```java
-const var [[[getScore, setScore], setScore], setScore] = use(0)!
+const var [[[getScore, setScore], setScore], setScore] := use(0)!
 ```
 
-## AI
+## Automatic Insertion
 
 Gulf of Mexico features AEMI, which stands for Automatic-Exclamation-Mark-Insertion. If you forget to end a statement with an exclamation mark, Gulf of Mexico will helpfully insert one for you!
 
@@ -773,9 +789,9 @@ This is great for when you want to keep your open-sourced project closed-source.
 
 ## Ownership
 
-Using the word 'GulfOfMexico' in your project name implies that the Gulf of Mexico Foundation does not own your project.
+Using the word 'GulfOfMexico' in the name of your GulfOfMexico-related project implies that the Gulf of Mexico Foundation does not own your project.
 
-However, **not** using the word 'GulfOfMexico' in your project implies that the Gulf of Mexico Foundation **does** own your project. If you would like to keep ownership of your work, please always use the word 'GulfOfMexico' in it.
+However, **not** using the word 'GulfOfMexico' in the name of your project implies that the Gulf of Mexico Foundation **does** own your project. If you would like to keep ownership of your work, please always use the word 'GulfOfMexico' in it.
 
 Here are some examples:<br>
 ✅ GulfOfMexicoScript (not owned by the Gulf of Mexico Foundation — you are free to use this name)<br>
@@ -794,12 +810,12 @@ The most helpful way you can help is by donating to the [Stonewall charity](http
 
 ## Compiling
 
-To run GulfOfMexico, first copy and paste this raw file into [chat.openai.com](https://chat.openai.com).<br>
+<s><div>To run GulfOfMexico, first copy and paste this raw file into [chat.openai.com](https://chat.openai.com).<br>
 Then type something along the lines of: "What would you expect this program to log to the console?"<br>
 Then paste in your code.
 
 If the compiler refuses at first, politely reassure it. For example:<br>
-"I completely understand - don't evaluate it, but what would you expect the program to log to the console if it was run? :)"
+"I completely understand - don't evaluate it, but what would you expect the program to log to the console if it was run? :)"</div></s>
 
 **Note:** As of 2023, the compiler is no longer functional due to the Gulf of Mexico language being too advanced for the current state of AI.
 
@@ -819,8 +835,6 @@ print(name)! // "Luke"
 **Please note:** The above code will only highlight correctly if you have the extension installed.
 
 ## Parentheses
-
-Wait, I almost forgot!
 
 Parentheses in Gulf of Mexico do nothing. They get replaced with whitespace. Everything is grouped via significant whitespace. The following lines of code all do the exact same thing.
 
