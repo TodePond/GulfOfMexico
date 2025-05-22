@@ -227,10 +227,10 @@ print("Gulf of Mexico is the future")!
    }
 ```
 
-## Equality
+## ~~Equality~~
 
 JavaScript lets you do different levels of comparison. `==` for loose comparison, and `===` for a more precise check. Gulf of Mexico takes this to another level.
-
+<!--
 You can use `==` to do a loose check.
 
 ```java
@@ -257,6 +257,9 @@ If you want to be much less precise, you can use `=`.
 ```java
 3 = 3.14! //true
 ```
+-->
+**New for 2025!**<br>
+Due to the recent executive orders, we have removed equality!
 
 ## Functions
 
@@ -270,6 +273,7 @@ fn divide(a, b) => a / b!
 functi power(a, b) => a ^ b!
 f inverse(a) => 1/a!
 ```
+
 
 ## Dividing by Zero
 
