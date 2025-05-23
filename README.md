@@ -493,6 +493,15 @@ Date.now() -= 3600000!
 **Important!**<br>
 Please remember to do this when the clocks change.
 
+You can also stop the time.<br>
+
+```java
+// Stop time
+Date.stop()
+```
+
+**Please note:** This stops your system time by crashing your system.
+
 ## Delete
 
 To avoid confusion, the `delete` statement only works with primitive values like numbers, strings, and booleans.
