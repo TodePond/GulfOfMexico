@@ -500,7 +500,7 @@ You can also stop the time.<br>
 Date.stop()
 ```
 
-**Please note:** This stops your system time by crashing your system.
+**Please note:** This stops your local time by destroying your system.
 
 ## Delete
 
