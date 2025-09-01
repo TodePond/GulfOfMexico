@@ -134,6 +134,3 @@ https://www.contributor-covenant.org/translations.
 ---
 
 Did you scroll down looking for a joke?
-
-Because here is one: don´t delta-ruin something of you are cooked
-0k :D
