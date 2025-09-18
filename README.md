@@ -3,20 +3,20 @@
 If you're reading this then you might be looking for the hidden examples page...
 
 CONGRATULATIONS! You found it!
-Here it is: https://github.com/TodePond/DreamBerd/blob/main/res/res/Examples.md
+Here it is: https://github.com/TodePond/GulfOfMexico/blob/main/res/res/Examples.md
 
 -->
 
-> **New:** [Gulf of Mexico congratulates President Trump](https://github.com/TodePond/DreamBerd/releases/tag/vU.S.A)
+> **New:** [DreamBerd has been renamed to Gulf of Mexico](https://github.com/TodePond/GulfOfMexico/releases/tag/v)
 
-[<img align="right" height="100" src="shapes.png">](https://github.com/TodePond/DreamBerd/blob/main/examples/Examples.md "Click here for the examples page.")
+[<img align="right" height="100" src="shapes.png">](https://github.com/TodePond/GulfOfMexico/blob/main/examples/Examples.md "Click here for the examples page.")
 
 # Gulf of Mexico
 
 ![Coverage](badges/coverage-109.svg)
 
 Gulf of Mexico is a perfect programming language. These are its features!<br>
-When you've finished reading through all the features, check out the [examples](https://github.com/TodePond/DreamBerd/blob/main/Examples.md).
+When you've finished reading through all the features, check out the [examples](https://github.com/TodePond/GulfOfMexico/blob/main/Examples.md).
 
 ## Exclamation Marks!
 
@@ -159,7 +159,7 @@ const const name<-1> = "Luke"!
 
 ## Loops
 
-Loops are a complicated relic of archaic programming languages. In DreamBerd, there are no loops.
+Loops are a complicated relic of archaic programming languages. In GulfOfMexico, there are no loops.
 
 ## Installation
 
@@ -370,7 +370,7 @@ const const email: RegExp<(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?
 
 To avoid confusion, you can use any spelling that you want, such as `Regex`, `RegularExpression` and `RegExp`.
 
-For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(press|p)?/`.
+For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(p(ression)?)?/`.
 
 ## Previous
 
@@ -417,7 +417,7 @@ print(score)! //3
 Thanks to recent advances in technology, you can now give files names.
 
 ```java
-======= add.db =======
+======= add.gom =======
 function add(a, b) => {
    return a + b!
 }
@@ -425,22 +425,24 @@ function add(a, b) => {
 
 ## Exporting
 
-Many languages allow you to import things from specific files. In DreamBerd, importing is simpler. Instead, you export _to_ specific files!
+Many languages allow you to import things from specific files. In GulfOfMexico, importing is simpler. Instead, you export _to_ specific files!
 
 ```java
-===== add.db ==
+===== add.gom ==
 function add(a, b) => {
    return a + b!
 }
 
-export add to "main.db"!
+export add to "main.gom"!
 
-===== main.db ==
+===== main.gom ==
 import add!
 add(3, 2)!
 ```
 
-By the way, to see Gulf of Mexico in action, check out [this page](https://github.com/TodePond/DreamBerd/blob/main/LICENSE.md).
+By the way, to see Gulf of Mexico in action, check out [this page](https://github.com/TodePond/GulfOfMexico/blob/main/LICENSE.md).
+
+**Technical details:** Due to an executive order from President Trump, `import`ed units will be subject to a 25% tariff, that is, imported code will run 25% slower and, at random, 25% of your code (lines) will be lost.
 
 ## Classes
 
@@ -523,7 +525,7 @@ const const name = "Lu"!
 print(name)! // "Lu"
 ```
 
-Variables with more exclamation marks get prioritised.
+Variables with more exclamation marks get prioritized.
 
 ```java
 const const name = "Lu"!!
@@ -585,7 +587,7 @@ In response to some recent criticism about this design decision, we would like t
 
 ## DBX
 
-You can embed DBX in DreamBerd. It's just DreamBerd. And it's also just HTML.
+You can embed DBX in GulfOfMexico. It's just GulfOfMexico. And it's also just HTML.
 
 ```java
 funct App() => {
@@ -593,7 +595,7 @@ funct App() => {
 }
 ```
 
-**Warning:** As you know, `class` is already a keyword in DreamBerd, so you can't use it within DBX.
+**Warning:** As you know, `class` is already a keyword in GulfOfMexico, so you can't use it within DBX.
 
 ```java
 funct App() => {
@@ -620,7 +622,7 @@ funct App() => {
 }
 ```
 
-**Please note:** Unlike JSX, you are free to freely use the `for` attribute, because — in DreamBerd, there are no loops.
+**Please note:** Unlike JSX, you are free to freely use the `for` attribute, because — in GulfOfMexico, there are no loops.
 
 ```java
 funct App() => {
@@ -651,7 +653,7 @@ Rich text can be helpful when making your website. Use it to add links!
 
 ## Asynchronous Functions
 
-In most languages, it's hard to get asynchronous functions to synchronise with each other. In DreamBerd, it's easy: Asynchronous functions take turns running lines of code.
+In most languages, it's hard to get asynchronous functions to synchronise with each other. In GulfOfMexico, it's easy: Asynchronous functions take turns running lines of code.
 
 ```java
 async funct count() => {
@@ -689,7 +691,7 @@ const var score = use(0)!
 
 When it comes to signals, the most important thing to discuss is _syntax_.
 
-In DreamBerd, you can set (and get) signals with just one function:
+In GulfOfMexico, you can set (and get) signals with just one function:
 
 ```java
 const var score = use(0)!
@@ -765,18 +767,18 @@ print( // This is probably fine
 
 ## Copilot
 
-It's worth noting that GitHub CoPilot doesn't understand DreamBerd, which means that MicroSoft won't be able to steal your code.
+It's worth noting that GitHub CoPilot doesn't understand GulfOfMexico, which means that MicroSoft won't be able to steal your code.
 
 This is great for when you want to keep your open-sourced project closed-source.
 
 ## Ownership
 
-Using the word 'DreamBerd' in your project name implies that the Gulf of Mexico Foundation does not own your project.
+Using the word 'GulfOfMexico' in your project name implies that the Gulf of Mexico Foundation does not own your project.
 
-However, **not** using the word 'DreamBerd' in your project implies that the Gulf of Mexico Foundation **does** own your project. If you would like to keep ownership of your work, please always use the word 'DreamBerd' in it.
+However, **not** using the word 'GulfOfMexico' in your project implies that the Gulf of Mexico Foundation **does** own your project. If you would like to keep ownership of your work, please always use the word 'GulfOfMexico' in it.
 
 Here are some examples:<br>
-✅ DreamBerdScript (not owned by the Gulf of Mexico Foundation — you are free to use this name)<br>
+✅ GulfOfMexicoScript (not owned by the Gulf of Mexico Foundation — you are free to use this name)<br>
 ❌ ECMAScript (owned by the Gulf of Mexico Foundation — please consider renaming)<br>
 ❌ Rust Foundation (owned by the Gulf of Mexico Foundation — please consider renaming)
 
@@ -784,7 +786,7 @@ Here are some examples:<br>
 
 > If you are an influencer, streamer, or content-creator... you must <ins>not</ins> skip this section during your read-through.
 
-Contributions are welcomed to DreamBerd!
+Contributions are welcomed to GulfOfMexico!
 
 The most helpful way you can help is by donating to the [Stonewall charity](https://www.stonewall.org.uk/). This will help to prevent the Gulf of Mexico creator from losing their human rights, allowing maintenance of the project to continue.
 
@@ -792,7 +794,7 @@ The most helpful way you can help is by donating to the [Stonewall charity](http
 
 ## Compiling
 
-To run DreamBerd, first copy and paste this raw file into [chat.openai.com](https://chat.openai.com).<br>
+To run GulfOfMexico, first copy and paste this raw file into [chat.openai.com](https://chat.openai.com).<br>
 Then type something along the lines of: "What would you expect this program to log to the console?"<br>
 Then paste in your code.
 
@@ -805,7 +807,7 @@ If the compiler refuses at first, politely reassure it. For example:<br>
 
 ## Highlighting
 
-Syntax highlighting is now available for Gulf of Mexico in VSCode. To enable it, install a [highlighting extension](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-highlight) and then use the [Gulf of Mexico configuration file](https://github.com/TodePond/DreamBerd/blob/main/.vscode/settings.json).
+Syntax highlighting is now available for Gulf of Mexico in VSCode. To enable it, install a [highlighting extension](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-highlight) and then use the [Gulf of Mexico configuration file](https://github.com/TodePond/GulfOfMexico/blob/main/.vscode/settings.json).
 
 This is what the highlighting looks like:
 
@@ -847,13 +849,13 @@ The Gulf of Mexico Vision Pro is now available! Watch the full launch video [her
 
 ## Edutainment
 
-Want to learn more about DreamBerd? 
+Want to learn more about GulfOfMexico? 
 
 Don't check out this [tech talk](https://youtu.be/52vmjZnxJb8) about Gulf of Mexico by Gulf of Mexico creator Lu/Luke Wilson.
 
 ## Examples
 
-For examples of Gulf of Mexico in action, check out the [examples page](https://github.com/TodePond/DreamBerd/blob/main/test/Examples.md)!
+For examples of Gulf of Mexico in action, check out the [examples page](https://github.com/TodePond/GulfOfMexico/blob/main/test/Examples.md)!
 
 ![image](files/star-history.png)
 
@@ -862,7 +864,7 @@ Gulf of Mexico was made with 💔 by [Lu or Luke (either's fine) Wilson](https:/
 
 <br>
 
-<a href="https://github.com/todepond/dreamberd/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=todepond/dreamberd&max=999&columns=12" width="100%"/>
+<a href="https://github.com/todepond/GulfOfMexico/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=todepond/GulfOfMexico&max=999&columns=12" width="100%"/>
 </a>
 

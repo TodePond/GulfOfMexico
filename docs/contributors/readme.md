@@ -1,6 +1,6 @@
 # 🏆 Gulf of Mexico Contributors Hall Of Fame 🏆
 
-We would like to thank everyone who has contributed to Dreamberd.
+We would like to thank everyone who has contributed to Gulf of Mexico.
 
 This list is only for people who have had a pull request accepted. If that's you, please submit a pull request adding your name. I'll happily accept it.
 
@@ -60,3 +60,7 @@ This list is only for people who have had a pull request accepted. If that's you
 - Necas209 🎃
 - Dan Q
 - loglot
+- Arija A. (TruncatedDinoSour)
+- Jason (GangstaWangstaPranksta 🥑)
+- PopcornMan55D 🍿
+- Svenlaa
