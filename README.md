@@ -271,6 +271,11 @@ functi power(a, b) => a ^ b!
 f inverse(a) => 1/a!
 ```
 
+Since `union` is also a combination of the word `function`, it's perfectly valid to use it too:
+```java
+union addMore(a, b, c) => a + b + c!
+```
+
 ## Dividing by Zero
 
 Dividing by zero returns `undefined`.
