@@ -12,3 +12,7 @@ currently being supported with security updates.~~
 ~~Tell them where to go, how often they can expect to get an update on a
 reported vulnerability, what to expect if the vulnerability is accepted or
 declined, etc.~~
+
+## Previously Found Vulnerabilities
+
+Use this section to share found vulnerabilities and how to exploit them to encourage users to update their software!
