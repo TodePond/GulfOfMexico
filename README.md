@@ -309,11 +309,28 @@ const const name = Luke!
 
 ## String Interpolation
 
-Please remember to use your regional currency when interpolating strings.
-
 ```java
 const const name = "world"!
 print("Hello ${name}!")!
+```
+
+You can also use informal slang to refer to your currency as shown below:
+
+```java
+print("Hello {name} Bucks!")!
+print("Hello {name} Bones!")!
+```
+
+Some slang can only be used for certain values:
+
+```java
+var var num = 99!
+print("I've got a {num} Benjamin!")! //Invalid
+```
+
+Please remember to use your regional currency when interpolating strings.
+
+```java
 print("Hello £{name}!")!
 print("Hello ¥{name}!")!
 ```
