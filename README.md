@@ -157,6 +157,40 @@ print(name)! //Luke
 const const name<-1> = "Luke"!
 ```
 
+## Immutable Garbage Collection
+
+Garbage collection dumps the stack and heap to the desktop. If you make a mistake, use the `chrono` keyword to rewind to a prior memory state and try again.
+
+```java
+const const secret<1> = "The real examples are in the res directory"!
+// the secret has been garbage collected :(
+print(secret) // null
+
+// not so fast buster
+chrono(-6)!
+print(secret) // "The real examples are in the res directory"
+```
+
+Memory dumps are stored as diffs, and rewinding state replays the diffs line by line with future state changes. Linewise garbage collection and lifetimes can be used for kernel-optimized routines.
+
+```java
+%! gc_frequency=1
+
+const var x = 1!
+x = x+1!
+
+chrono<2>(-2)! // lifetimes of chrono calls are computed relative to the timeshifted frame
+print(x)  // 3
+
+chrono<4>(-4)!
+print(x)  // 5
+
+chrono<7>(-7)!
+print(x)  // 9
+```
+
+Removal or modification of garbage dump files is not recommended, as the interpreter will be forced to recompute its state from any remaining immutable garbage history.
+
 ## Loops
 
 Loops are a complicated relic of archaic programming languages. In GulfOfMexico, there are no loops.
