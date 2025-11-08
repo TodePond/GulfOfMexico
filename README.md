@@ -771,6 +771,47 @@ It's worth noting that GitHub CoPilot doesn't understand GulfOfMexico, which mea
 
 This is great for when you want to keep your open-sourced project closed-source.
 
+## Package Management
+
+Gulf of Mexico believes in **gpm**, the world’s most advanced package manager.
+It has evolved beyond mere installation or dependency handling; it is now an act of philosophy.
+
+### Atomic Packages
+
+According to Gulf of Mexico’s design principles, every smallest possible unit deserves independence.
+Therefore, **every character** is its own package.
+
+```java
+gpm install "p"!
+gpm install "r"!
+gpm install "i"!
+gpm install "n"!
+gpm install "t"!
+print("Hello world")!
+```
+
+### Dependency Paradise
+
+Gulf of Mexico does not believe in “dependency hell”.
+It believes in **dependency paradise**, a perfect state of eternal interconnectedness.
+
+Every time you install one package, gpm automatically installs all of its spiritual ancestors, conceptual influences, and any other packages that feel emotionally related.
+
+```bash
+gpm install hello-world!
+> Installing 4,812,039 supportive friends...
+> Estimated completion: infinite
+```
+
+### Absolute Minimalism
+
+Gulf of Mexico strongly embraces **minimalism**, gpm now supports zero-byte packages.
+
+```bash
+gpm install void!
+> Installed 0 bytes in 23 minutes
+```
+
 ## Ownership
 
 Using the word 'GulfOfMexico' in your project name implies that the Gulf of Mexico Foundation does not own your project.
