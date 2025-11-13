@@ -1,0 +1,17 @@
+// Variables That Need Therapy Animals
+// Variables get emotional support animals
+
+const var anxious = 10!
+const var therapyDog = 5!
+
+anxious.getTherapyAnimal(therapyDog)! // Gets animal
+print(anxious.emotionalState())? // "calm"
+
+const var depressed = 20!
+const var therapyCat = 7!
+depressed.getTherapyAnimal(therapyCat)! // Cat helps
+
+const var stressed = 30!
+const var therapyBird = 3!
+stressed.getTherapyAnimal(therapyBird)! // Bird helps
+

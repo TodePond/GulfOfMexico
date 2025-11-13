@@ -1,0 +1,12 @@
+// Functions That Argue With Each Other
+
+funct add(a, b) => a + b!
+funct multiply(a, b) => a * b!
+funct subtract(a, b) => a - b!
+
+const const result1 = debate(add(5, 3), multiply(5, 3))!
+print(result1)? // Could be 8 or 15
+
+const const result2 = debate(add(2, 2), subtract(10, 6), multiply(1, 4))!
+print(result2)? // All three functions argue, one wins
+

@@ -1,0 +1,16 @@
+// Time-Traveling Functions
+// Functions change their own past
+
+funct add(a, b) => {
+   timeTravel(-1)! // Go back in time
+   return a + b + 1! // Affects past version
+}
+
+add(2, 3)! // Creates temporal paradox
+
+funct paradox() => {
+   const const past = timeTravel(-5)?
+   past.change()! // Change the past
+   return "Paradox created!"!
+}
+
