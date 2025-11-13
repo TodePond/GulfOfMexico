@@ -1,0 +1,22 @@
+{
+  "name": "gulfofmexico-compiler",
+  "version": "1.0.0",
+  "description": "The most cursed compiler for GulfOfMexico",
+  "main": "compiler.js",
+  "bin": {
+    "gofm-compile": "./compiler.js"
+  },
+  "scripts": {
+    "compile": "node compiler.js",
+    "test": "node compiler.js suite/examples/hello-world.db test-output.js"
+  },
+  "keywords": [
+    "gulfofmexico",
+    "dreamberd",
+    "compiler",
+    "cursed"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+

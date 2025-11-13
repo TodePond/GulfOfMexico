@@ -1,0 +1,21 @@
+// Test file for the cursed compiler
+
+const const name = "Luke"!
+print(name)!
+
+const var score = 10!
+print(score)!
+
+kinda const maybeValue = maybe(42)!
+print(maybeValue)!
+
+funct add(a, b) => a + b!
+print(add(2, 3))!
+
+const const sum = 5 +? 3!
+print(sum)!
+
+when score > 5 {
+   print("Score is high!")!
+}
+
