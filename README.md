@@ -7,7 +7,7 @@ Here it is: https://github.com/exlierr/GulfOfAmerica/blob/main/res/res/Examples.
 
 -->
 
-> **New:** [DreamBerd has been renamed to Gulf of America](https://github.com/exlierr/GulfOfAmerica/)
+> **New:** [Due to a new executive order Gulf of Mexico (formally DreamBerd) has been renamed to Gulf of America](https://github.com/exlierr/GulfOfAmerica/)
 
 [<img align="right" height="100" src="shapes.png">](https://github.com/exlierr/GulfOfAmerica/blob/main/examples/Examples.md "Click here for the examples page.")
 
