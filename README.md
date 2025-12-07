@@ -370,7 +370,7 @@ const const email: RegExp<(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?
 
 To avoid confusion, you can use any spelling that you want, such as `Regex`, `RegularExpression` and `RegExp`.
 
-For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(press|p)?/`.
+For simplicity, all supported regular expressions match the regular expression `/Reg(ular)?[eE]x(p(ression)?)?/`.
 
 ## Previous
 
@@ -417,7 +417,7 @@ print(score)! //3
 Thanks to recent advances in technology, you can now give files names.
 
 ```java
-======= add.db =======
+======= add.gom =======
 function add(a, b) => {
    return a + b!
 }
@@ -428,14 +428,14 @@ function add(a, b) => {
 Many languages allow you to import things from specific files. In GulfOfMexico, importing is simpler. Instead, you export _to_ specific files!
 
 ```java
-===== add.db ==
+===== add.gom ==
 function add(a, b) => {
    return a + b!
 }
 
-export add to "main.db"!
+export add to "main.gom"!
 
-===== main.db ==
+===== main.gom ==
 import add!
 add(3, 2)!
 ```
@@ -871,7 +871,7 @@ Gulf of Mexico was made with 💔 by [Lu or Luke (either's fine) Wilson](https:/
 
 <br>
 
-<a href="https://github.com/todepond/dreamberd/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=todepond/dreamberd&max=999&columns=12" width="100%"/>
+<a href="https://github.com/todepond/GulfOfMexico/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=todepond/GulfOfMexico&max=999&columns=12" width="100%"/>
 </a>
 
