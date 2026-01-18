@@ -724,6 +724,18 @@ This means that you can carry on splitting as much as you like.
 const var [[[getScore, setScore], setScore], setScore] = use(0)!
 ```
 
+## Almost-In-Time
+
+Gulf of Mexico cares about speed above all else, so we use Almost-In-Time code execution. You can annotate functions that need to finish within a certain time frame with a `function lifetime`. If the lifetime is reached before the function finished, a random value from the return type's possible values is returned.
+
+```java
+function slow<5s>(a: Int, b: Int): Int => {
+   return a + b! // Or anything else if the calculation is slower than 5 seconds
+}
+```
+
+**Technical info:** As Type annotations are actually ignored, we just return two random bytes, which should be valid values for all types.
+
 ## AI
 
 Gulf of Mexico features AEMI, which stands for Automatic-Exclamation-Mark-Insertion. If you forget to end a statement with an exclamation mark, Gulf of Mexico will helpfully insert one for you!
