@@ -36,6 +36,9 @@ This list is only for people who have had a pull request accepted. If that's you
 - 8bitsquid
 - <img alt="alifeee" src="https://github.com/TodePond/Gulf of Mexico - e/acc/assets/13833017/aad115f5-0d9d-4d19-9d07-ef9ef510b3a1" height="16px" width="59px">
 - 12emin34
+- const const const user = CTNOriginals!!!!
+- delete user!
+- reverse
 - R74n
 - 2Gud4U (Jeff)
 - Astralchroma
