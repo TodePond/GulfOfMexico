@@ -220,7 +220,7 @@ Note that whenever you add Roman numerals, you get an Arabic numeral. Also note 
 ```java
 print(toRoman(7))! //VII
 print(toArabic(XXI))! //21
-print(toRoman(7) + II) //9
+print(toRoman(7) + II)! //9
 print(II + 4)! // This is not ok
 ```
 
