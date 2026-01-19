@@ -38,6 +38,22 @@ If you're unsure, that's ok. You can put a question mark at the end of a line in
 print("Hello world")?
 ```
 
+If you're mostly sure, you can put an interrobang (or exclamation point and question mark) at the end. This does nothing except give you words of encouragement.
+
+```java
+print("Hello World")‽
+print("Hello World")!? //This is ok
+print("Hello World")!!!!!? //This is also ok
+```
+
+You can optionally add a second question mark to your question mark, negating the unsureness and making you sure again.
+
+```java
+print("Hello World")??
+```
+Note: An even number of question marks make you sure.
+
+
 You might be wondering what Gulf of Mexico uses for the 'not' operator, which is an exclamation mark in most other languages. That's simple - the 'not' operator is a semi-colon instead.
 
 ```java
