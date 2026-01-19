@@ -215,7 +215,7 @@ And Roman numerals!
 print(II + V)! //7
 ```
 
-Note that roman numerals and arabic numerals do not work with each other. Thus, we have added two new functions: toRoman and toArabic.
+Note that whenever you add Roman numerals, you get an Arabic numeral. Also note that roman numerals and arabic numerals do not work with each other. Thus, we have added two new functions: toRoman and toArabic.
 
 ```java
 print(toRoman(7))! //VII
