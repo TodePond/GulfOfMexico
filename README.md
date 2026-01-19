@@ -209,6 +209,12 @@ You can also use number names.
 print(one + two)! //3
 ```
 
+And Roman numerals!
+
+```java
+print(II + V)! //7
+```
+
 ## Indents
 
 When it comes to indentation, Gulf of Mexico strikes a happy medium that can be enjoyed by everyone: All indents must be 3 spaces long.
