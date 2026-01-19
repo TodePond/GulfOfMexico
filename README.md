@@ -219,7 +219,7 @@ Note that roman numerals and arabic numerals do not work with each other. Thus, 
 
 ```java
 print(toRoman(7))! //VII
-print(toArab(XXI))! //21
+print(toArabic(XXI))! //21
 print(toRoman(7) + II) //9
 print(II + 4)! // This is not ok
 ```
