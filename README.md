@@ -724,6 +724,16 @@ This means that you can carry on splitting as much as you like.
 const var [[[getScore, setScore], setScore], setScore] = use(0)!
 ```
 
+## Experimental features
+
+To enable DreamBerd---e-acc experimental features, start your scripts with the string `trans rights`.
+
+```java
+"trans rights"!
+
+print("hi DreamBerd---e-acc")!
+```
+
 ## AI
 
 Gulf of Mexico features AEMI, which stands for Automatic-Exclamation-Mark-Insertion. If you forget to end a statement with an exclamation mark, Gulf of Mexico will helpfully insert one for you!
