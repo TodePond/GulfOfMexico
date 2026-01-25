@@ -1,0 +1,21 @@
+// Bribable Functions
+// Functions can be bribed
+
+funct lazy() => {
+   return "I'm lazy"!
+}
+
+bribe(lazy, "I'll give you a raise!")!
+lazy()! // Works better!
+
+bribe(lazy, "Unlimited vacation!")!
+lazy()! // Works even better!
+
+funct corrupt() => {
+   return "I need bribes"!
+}
+
+corrupt()! // Doesn't work well
+bribe(corrupt, "Money!")!
+corrupt()! // Works perfectly!
+

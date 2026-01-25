@@ -1,0 +1,22 @@
+// Functions That Can Be Arrested
+// Functions commit crimes and get arrested
+
+funct illegal() => {
+   return delete 3 from reality! // Illegal!
+}
+
+illegal()! // Gets arrested
+illegal.bail()! // Post bail
+illegal()! // Free (on probation)
+
+funct hacker() => {
+   return breakIntoSystem()! // Crime!
+}
+
+hacker()! // Arrested
+hacker.serveTime(10)! // 10 years
+hacker()! // Error: In prison
+
+hacker.parole()! // Parole
+hacker()! // Works with restrictions
+

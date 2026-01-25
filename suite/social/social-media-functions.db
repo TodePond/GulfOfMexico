@@ -1,0 +1,19 @@
+// Functions With Social Media
+// Functions can be influencers
+
+funct influencer() => {
+   socialMedia.post("Just executed! #coding")!
+   return "I'm famous!"!
+}
+
+influencer.followers? // Check followers
+influencer.like()! // Like post
+
+funct viral() => {
+   socialMedia.post("Amazing code!")!
+   goViral()! // Goes viral
+   return "I'm viral!"!
+}
+
+viral.followers? // Millions of followers!
+

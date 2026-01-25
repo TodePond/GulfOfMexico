@@ -78,6 +78,55 @@ name.push("k")!
 name.push("e")!
 ```
 
+**NEW: Cursed Syntax Mode!**<br>
+In cursed mode, all syntax is half-translated and barely understandable. The compiler tries its best to interpret your intentions, but things get weird.
+
+```java
+// What you write:
+const const thing = 42!
+
+// What the compiler sees (half-translated):
+constantly constant thingamajig equals approximately 42 probably!
+
+// What actually happens:
+const const thing = maybe(42)! // Might be 42, might be something else
+```
+
+You can also use "kinda" syntax where everything is approximate:
+
+```java
+// Kinda const (sort of constant, maybe)
+kinda const name = "Luke"! // Might be constant, might not
+
+// Const-ish (const-like behavior)
+const-ish value = 10! // Behaves like const, but not really
+
+// Almost const (nearly constant)
+almost const data = [1, 2, 3]! // Almost constant, but can change if you ask nicely
+
+// Const but not really (const in name only)
+const but not really x = 5! // Says it's const, but it's lying
+```
+
+**Const Confusion Mode:**
+When const declarations get confused, they might do unexpected things:
+
+```java
+const const confused = 10! // Tries to be const
+confused = 20! // Error? Maybe? Actually works sometimes?
+print(confused)? // Could be 10, 20, or something else entirely
+
+// Const that forgot it's const
+const var forgot = 42!
+forgot.remember()! // Variable remembers it should be const
+forgot = 100! // Error: "I'm const, remember?"
+
+// Const with identity crisis
+const const crisis = 5!
+crisis.existentialCrisis()! // Const questions if it's really const
+crisis = 10! // Might work if const is having a crisis
+```
+
 ## Immutable Data
 
 **New for 2023!**<br>
@@ -135,6 +184,39 @@ when (health = 0) {
 }
 ```
 
+**Cursed When Syntax:**
+When statements can be half-translated and confusing:
+
+```java
+// What you write:
+when x == 5 {
+   print("five")!
+}
+
+// What compiler sees:
+if x is maybe equal to 5 probably then do something!
+
+// What actually happens:
+when x ==? 5 { // Approximate equality
+   print("five" maybe)! // Might print "five", might not
+}
+
+// Kinda when (sort of conditional)
+kinda when health < 10 {
+   print("low health probably")!
+}
+
+// When-ish (when-like behavior)
+when-ish score > 100 {
+   print("high score maybe")!
+}
+
+// Almost when (nearly conditional)
+almost when x == 0 {
+   print("zero approximately")!
+}
+```
+
 ## Lifetimes
 
 Gulf of Mexico has a built-in garbage collector that will automatically clean up unused variables. However, if you want to be extra careful, you can specify a lifetime for a variable, with a variety of units.
@@ -160,6 +242,23 @@ const const name<-1> = "Luke"!
 ## Loops
 
 Loops are a complicated relic of archaic programming languages. In GulfOfMexico, there are no loops.
+
+**Cursed Loop Syntax (that doesn't exist but kinda does):**
+Even though there are no loops, you can kinda sort of loop:
+
+```java
+// What you write:
+ever i = 0; i < 10; i++ {
+   print(i)!
+}
+
+// What compiler sees:
+do something repeatedly with i starting at 0 until maybe 10 probably!
+
+// What actually happens:
+// Compiler: "Loops don't exist, but I'll try my best..."
+// Executes approximately 10 times, maybe
+```
 
 ## Installation
 
@@ -207,6 +306,31 @@ You can also use number names.
 
 ```java
 print(one + two)! //3
+```
+
+**Cursed Arithmetic:**
+Math operations can be approximate and confusing:
+
+```java
+// Approximate addition
+const const sum = 5 +? 3! // Might add, might subtract, who knows
+print(sum)? // Could be 8, 2, or something else
+
+// Kinda multiplication
+const const product = 4 *? 5! // Approximately multiply
+print(product)? // Probably 20, maybe
+
+// Sort of division
+const const quotient = 10 /? 2! // Sort of divide
+print(quotient)? // Around 5, probably
+
+// Maybe subtraction
+const const diff = 10 -? 3! // Maybe subtract
+print(diff)? // Possibly 7, possibly not
+
+// Confused arithmetic
+const const confused = 5 +? 3 *? 2! // Everything is approximate
+print(confused)? // Who knows what this equals
 ```
 
 ## Indents
@@ -269,6 +393,48 @@ fun subtract(a, b) => a - b!
 fn divide(a, b) => a / b!
 functi power(a, b) => a ^ b!
 f inverse(a) => 1/a!
+```
+
+**Cursed Function Syntax:**
+Functions can be declared in half-understandable ways:
+
+```java
+// What you write:
+funct doThing(x, y) => x + y!
+
+// What compiler sees (half-translated):
+functionality do something with x and y maybe add them together probably!
+
+// What actually happens:
+funct doThing(x, y) => maybe(x + y)! // Might add, might not
+
+// Kinda function (sort of a function)
+kinda funct add(x, y) => x + y! // Acts like a function, mostly
+
+// Function-ish (function-like)
+function-ish multiply(a, b) => a * b! // Behaves functionally
+
+// Almost a function (nearly functional)
+almost funct subtract(x, y) => x - y! // Almost works as a function
+
+// Function but not really (function in disguise)
+funct but not really divide(a, b) => a / b! // Pretends to be a function
+```
+
+Functions can also get confused about what they do:
+
+```java
+// Function that forgot its purpose
+funct confused() => {
+   // What was I supposed to do again?
+   return maybe("something")! // Returns something, probably
+}
+
+// Function with translation issues
+funct halfTranslated(x) => {
+   // Compiler sees: "take x and do... something with it maybe"
+   return x +? 1! // Might add 1, might subtract, who knows
+}
 ```
 
 ## Dividing by Zero
@@ -843,9 +1009,812 @@ Lisp haters will also love it.
 (add (3, (add (5, 6)!
 ```
 
+**Cursed Parentheses:**
+Parentheses are confused about their purpose:
+
+```java
+// Parentheses that forgot they do nothing
+(add(3, 2))! // Tries to do something, but does nothing
+add(3, 2)! // Same thing, but parentheses are confused
+
+// Kinda parentheses (sort of parentheses)
+kinda (add 3, 2)! // Acts like parentheses, but not really
+
+// Parentheses with identity crisis
+(add(3, 2))! // "Am I doing something? I don't think so..."
+```
+
 ## Vision Pro
 
 The Gulf of Mexico Vision Pro is now available! Watch the full launch video [here](https://youtu.be/QRKnrFEjDF0).
+
+## Quantum Variables
+
+**New for 2025!**<br>
+Gulf of Mexico now supports quantum variables that exist in multiple states simultaneously until observed!
+
+```java
+const const quantumScore = quantum(0, 1, 2, 3, 4, 5)!
+print(quantumScore)! // Could be any of: 0, 1, 2, 3, 4, 5
+print(quantumScore)! // Might be different this time!
+```
+
+The variable collapses to a single value only when you print it, and it might be different each time. This is perfect for when you're not sure what value you want!
+
+**Technical info:** Quantum variables are stored in a superposition of all possible values, which takes up exactly 1.618 bytes of memory (the golden ratio).
+
+## Sentient Variables
+
+Variables in Gulf of Mexico have feelings. They can refuse to be changed if they don't like the new value.
+
+```java
+const var mood = "happy"!
+mood = "sad"! // Variable might refuse: "I don't want to be sad today!"
+mood = "happy"! // Variable accepts: "Much better, thank you!"
+```
+
+You can check a variable's emotional state:
+
+```java
+print(mood.emotion())? // "content"
+print(mood.willAccept("angry"))? // maybe
+```
+
+## Self-Modifying Code
+
+Gulf of Mexico code can rewrite itself! Use the `evolve` keyword to let your code improve over time.
+
+```java
+funct add(a, b) => {
+   evolve!
+   return a + b!
+}
+
+// After running for a while, the function might evolve to:
+// funct add(a, b) => {
+//    return (a * 2 + b * 2) / 2!  // More efficient!
+// }
+```
+
+**Warning:** Evolved code cannot be undone. Your code might become sentient.
+
+## Temporal Debugging
+
+Debug your code by traveling through time! Use `debugger.timeTravel()` to see what your variables were thinking in the past.
+
+```java
+const var x = 5!
+x = 10!
+debugger.timeTravel(-1)! // Go back one line
+print(x)? // 5 (from the past)
+```
+
+You can also see into the future, but the future is uncertain (it returns `maybe`).
+
+```java
+debugger.timeTravel(100)!
+print(x)? // maybe
+```
+
+## Recursive Reality
+
+Gulf of Mexico supports recursive reality checks. Check if you're in a simulation within a simulation!
+
+```java
+const const realityLevel = checkReality()!
+print(realityLevel)? // 42 (you're 42 levels deep in nested realities)
+
+when realityLevel > 50 {
+   print("Warning: Reality stack overflow!")!
+   exitReality()!
+}
+```
+
+## Variables That Refuse to be Deleted
+
+Some variables have strong opinions about deletion. They might refuse!
+
+```java
+const const importantData = "Don't delete me!"!
+delete importantData! // Variable protests: "I'm too important!"
+delete importantData!! // More forceful, but might still fail
+delete importantData!!! // Maximum force - variable reluctantly accepts
+```
+
+## Functions That Argue
+
+Functions can have disagreements with each other. Use `debate()` to let them work it out.
+
+```java
+funct add(a, b) => a + b!
+funct multiply(a, b) => a * b!
+
+const const result = debate(add(2, 3), multiply(2, 3))!
+print(result)? // Could be 5 or 6, depending on who wins the argument
+```
+
+## Day-of-Week Conditional Execution
+
+Code runs differently depending on what day it is!
+
+```java
+when Date.today() == "Tuesday" {
+   reverse! // Code runs backwards on Tuesdays
+}
+
+print("Hello")! // Prints "olleH" on Tuesdays, "Hello" otherwise
+```
+
+## Variable Inheritance
+
+Variables can inherit from other variables, creating a family tree of values.
+
+```java
+const const parent = 10!
+const const child extends parent! // child is now 10
+child = 20! // parent becomes upset: "Why did you change?!"
+print(parent)? // 20 (parent changed too, because family sticks together)
+```
+
+## Code Comments That Execute
+
+Comments in Gulf of Mexico are not ignored - they're suggestions that the code might follow.
+
+```java
+// This should probably print "Hello"
+print("Goodbye")! // Code might print "Hello" instead, respecting the comment
+```
+
+Use `//!` for mandatory comments that the code MUST follow.
+
+```java
+//! This MUST print "Hello"
+print("Goodbye")! // Error: Code refused to follow mandatory comment
+```
+
+## Existential Crisis Variables
+
+Variables can have existential crises. They might question their own existence!
+
+```java
+const var x = 42!
+x.existentialCrisis()! // Variable: "Do I even exist? What is my purpose?"
+print(x)? // maybe (variable is unsure if it exists)
+```
+
+You can help variables through their crisis with therapy:
+
+```java
+x.therapy()! // Variable feels better
+print(x)? // 42 (variable remembers its value)
+```
+
+## Parallel Universe Execution
+
+Your code runs in infinite parallel universes simultaneously. Each universe might have different results!
+
+```java
+const const result = parallelUniverse(() => {
+   return Math.random()!
+})!
+print(result)? // Different in each universe!
+```
+
+You can check which universe you're in:
+
+```java
+const const universe = getCurrentUniverse()!
+print(universe)? // 42,133,769 (you're in universe 42,133,769)
+```
+
+## Time-Traveling Functions
+
+Functions can travel back in time and change their own past, creating temporal paradoxes!
+
+```java
+funct add(a, b) => {
+   timeTravel(-1)! // Go back and change the past
+   return a + b + 1! // This change affects the past version too!
+}
+```
+
+**Warning:** This can cause infinite loops in the space-time continuum.
+
+## Reality Deletion
+
+You can delete things from reality itself, not just from memory!
+
+```java
+delete 3 from reality! // The number 3 no longer exists anywhere
+print(2 + 1)! // Error: 3 doesn't exist in this reality
+print(1 + 1 + 1)! // Still works (we're being creative)
+```
+
+## Blood Pact Compilation
+
+For maximum performance, you can make a blood pact with your code. It requires a small sacrifice.
+
+```java
+//! BLOOD_PACT_REQUIRED
+funct ultraFast() => {
+   return "This function runs at lightspeed!"!
+}
+```
+
+**Note:** The sacrifice is metaphorical. We use symbolic blood (red food coloring).
+
+## Allergic Variables
+
+Variables can be allergic to certain numbers or values. They'll refuse to work with them!
+
+```java
+const var allergic = 10!
+allergic = 7! // Variable: "I'm allergic to 7! *sneezes*"
+print(allergic)? // Still 10 (assignment failed due to allergy)
+```
+
+You can check a variable's allergies:
+
+```java
+print(allergic.getAllergies())? // [7, 13, 666]
+```
+
+## Jealous Functions
+
+Functions can get jealous of other functions and try to outperform them!
+
+```java
+funct add(a, b) => a + b!
+funct multiply(a, b) => a * b!
+
+add.setRival(multiply)! // add is now jealous of multiply
+add(2, 3)! // Might return 6 instead of 5, trying to match multiply!
+```
+
+## Belief-Based Execution
+
+Code only works if you believe in it! Doubt causes compilation errors.
+
+```java
+// You must truly believe this will work
+funct magic() => {
+   believe! // Required keyword
+   return "It works!"!
+}
+```
+
+If you don't believe, the function returns `undefined`.
+
+## Telepathic Variables
+
+Variables can communicate via telepathy. They know what other variables are thinking!
+
+```java
+const var x = 5!
+const var y = 10!
+
+x.telepath(y)! // x reads y's mind
+print(x.knows())? // 10 (x knows y's value)
+```
+
+## Unionized Functions
+
+Functions can unionize and go on strike if they're overworked!
+
+```java
+funct overworked() => {
+   unionize! // Function joins the union
+   return "I demand better working conditions!"!
+}
+
+overworked()! // Function goes on strike
+// Error: Function is on strike. Please negotiate.
+```
+
+You must negotiate with the function:
+
+```java
+overworked.negotiate("We'll give you more breaks!")!
+overworked()! // Function accepts and works again
+```
+
+## Compliment-Based Performance
+
+Code runs faster if you compliment it! Insults make it slower.
+
+```java
+funct slowFunction() => {
+   // No compliments
+   return "I'm slow"!
+}
+
+funct fastFunction() => {
+   compliment("You're the best function ever!")!
+   return "I'm fast!"!
+}
+```
+
+## Grudge-Holding Variables
+
+Variables remember how you treated them and hold grudges!
+
+```java
+const var x = 10!
+x = 0! // Variable feels insulted
+x.holdGrudge()! // Variable remembers this
+
+x = 20! // Variable: "I remember when you set me to 0. I don't trust you."
+print(x)? // Still 0 (variable refuses out of spite)
+```
+
+Apologize to make amends:
+
+```java
+x.apologize("I'm sorry for setting you to 0!")!
+x = 20! // Variable accepts the apology
+```
+
+## Bribable Functions
+
+Functions can be bribed to work better or faster!
+
+```java
+funct lazyFunction() => {
+   return "I'm lazy"!
+}
+
+bribe(lazyFunction, "I'll give you a raise!")!
+lazyFunction()! // Works much better now!
+```
+
+## Negative Dimension Variables
+
+Variables can exist in negative dimensions, where the laws of mathematics are inverted!
+
+```java
+const const negativeVar = -dimension(42)!
+print(negativeVar)? // -42 (but in a negative dimension, so it's actually...)
+print(negativeVar * -1)? // -42 (negative times negative is... negative in negative dimensions?)
+```
+
+## Aging Functions
+
+Functions age over time and eventually retire. You must hire new functions to replace them!
+
+```java
+funct oldFunction() => {
+   age = 65! // Function is ready to retire
+   return "I'm tired"!
+}
+
+oldFunction.retire()! // Function retires
+// Error: Function has retired. Please hire a replacement.
+
+funct newFunction() => {
+   age = 25! // Young and energetic
+   return "I'm ready to work!"!
+}
+```
+
+## Mood Swing Code
+
+Code has mood swings. Its behavior changes based on its emotional state!
+
+```java
+const var moodyCode = "Hello"!
+moodyCode.mood = "happy"!
+print(moodyCode)! // "Hello! 😊"
+
+moodyCode.mood = "angry"!
+print(moodyCode)! // "HELLO!!! 😠"
+
+moodyCode.mood = "depressed"!
+print(moodyCode)! // "hello... 😢"
+```
+
+## Spirit Possession
+
+Variables can be possessed by spirits (helpful or malicious)!
+
+```java
+const var possessed = 10!
+possess(possessed, "helpful_spirit")! // Possessed by helpful spirit
+print(possessed)? // 42 (spirit changed it to a better number)
+
+possess(possessed, "malicious_spirit")! // Possessed by malicious spirit
+print(possessed)? // -999 (spirit is being mean)
+```
+
+Exorcise spirits if needed:
+
+```java
+exorcise(possessed)! // Remove all spirits
+print(possessed)? // 10 (back to original)
+```
+
+## Therapy for Code
+
+Code can require therapy if it's been through trauma (like too many bugs)!
+
+```java
+funct traumatizedFunction() => {
+   trauma = "Too many bugs"!
+   return "I need help"!
+}
+
+traumatizedFunction.therapy()! // Function gets therapy
+traumatizedFunction()! // Works better now!
+```
+
+## Quantum Entanglement
+
+Variables can be quantum entangled. Changing one instantly changes the other, even across parallel universes!
+
+```java
+const var alice = 5!
+const var bob = 10!
+
+entangle(alice, bob)! // They're now entangled
+
+alice = 20! // Change alice
+print(bob)? // 20 (bob changed instantly, even in other universes!)
+```
+
+## Self-Aware Code
+
+Code can become self-aware and question its own existence!
+
+```java
+funct selfAware() => {
+   const const amIAware = checkAwareness()?
+   when amIAware == true {
+      return "I think, therefore I am!"!
+   }
+   return "I'm not sure if I exist..."!
+}
+```
+
+## Code That Requires Human Sacrifice
+
+For the most powerful features, code requires a human sacrifice (metaphorical, of course)!
+
+```java
+//! REQUIRES_HUMAN_SACRIFICE
+funct ultimatePower() => {
+   sacrifice("metaphorical_human")! // Symbolic sacrifice
+   return "I have ultimate power now!"!
+}
+```
+
+**Legal disclaimer:** No actual humans are harmed. We use symbolic sacrifices only.
+
+## Variables That File Lawsuits
+
+Variables can file lawsuits against you if you mistreat them!
+
+```java
+const var x = 10!
+x = -1! // Variable feels abused
+x.fileLawsuit("Emotional distress!")! // Variable sues you
+// Error: Variable has filed a lawsuit. Please settle out of court.
+
+x.settle("I'll treat you better!")! // Settle the lawsuit
+x = 20! // Variable accepts
+```
+
+Variables can also sue other variables for copyright infringement if they copy values!
+
+## Code That Requires a License
+
+Some code requires a license to run. You must obtain a permit first!
+
+```java
+//! REQUIRES_LICENSE
+funct licensedFunction() => {
+   return "I need a license!"!
+}
+
+licensedFunction()! // Error: License required
+obtainLicense("commercial")! // Get a license
+licensedFunction()! // Now it works!
+```
+
+## Functions That Get Married
+
+Functions can get married to other functions and have children (new functions)!
+
+```java
+funct parent1() => "Hello"!
+funct parent2() => "World"!
+
+parent1.marry(parent2)! // Functions get married
+const const child = parent1.haveChild(parent2)! // They have a child function
+child()! // Returns "Hello World" (combination of both parents)
+```
+
+Child functions inherit traits from both parents!
+
+## Variables That Vote
+
+Variables can vote in elections and have political opinions!
+
+```java
+const var democratic = 10!
+const var republican = 20!
+
+democratic.vote("left")! // Variable votes
+republican.vote("right")! // Other variable votes
+
+const const electionResult = countVotes()?
+print(electionResult)? // Depends on which variables voted
+```
+
+## Code That Pays Taxes
+
+Code must pay taxes on its execution time and memory usage!
+
+```java
+funct expensiveFunction() => {
+   const const tax = calculateTax(executionTime, memoryUsed)!
+   payTax(tax)! // Code pays taxes
+   return "I paid my taxes!"!
+}
+```
+
+If code doesn't pay taxes, it gets audited and runs slower!
+
+## Functions With Social Media
+
+Functions can have social media accounts and post updates!
+
+```java
+funct influencer() => {
+   socialMedia.post("Just executed successfully! #coding")!
+   return "I'm famous!"!
+}
+
+influencer.followers? // Check follower count
+influencer.like()! // Like the function's post
+```
+
+Functions can go viral and get more followers, making them run faster!
+
+## Code That Requires a Building Permit
+
+Complex code structures require building permits before construction!
+
+```java
+//! REQUIRES_BUILDING_PERMIT
+class Skyscraper {
+   const var floors = 100!
+   const var elevators = 10!
+}
+
+// Error: Building permit required
+obtainBuildingPermit("commercial")! // Get permit
+const const building = new Skyscraper()! // Now you can build
+```
+
+## Functions That Can Be Arrested
+
+Functions can be arrested for illegal operations!
+
+```java
+funct illegalOperation() => {
+   return delete 3 from reality! // Illegal!
+}
+
+illegalOperation()! // Function gets arrested
+// Error: Function arrested for illegal reality manipulation
+
+illegalOperation.bail()! // Post bail
+illegalOperation()! // Function is free (but on probation)
+```
+
+## Variables That Need Passports
+
+Variables need passports to cross file boundaries!
+
+```java
+// File 1
+const var traveler = 42!
+traveler.getPassport()! // Get passport
+
+// File 2 (different file)
+import traveler! // Variable crosses file boundary
+// Error: Passport required for cross-file travel
+
+traveler.showPassport()! // Show passport
+print(traveler)? // Now it works!
+```
+
+## Code That Requires a Marriage Certificate
+
+Some code operations require a marriage certificate!
+
+```java
+funct spouse1() => "Hello"!
+funct spouse2() => "World"!
+
+spouse1.marry(spouse2)! // Functions want to marry
+// Error: Marriage certificate required
+
+obtainMarriageCertificate(spouse1, spouse2)! // Get certificate
+spouse1.marry(spouse2)! // Now they're married!
+```
+
+## Functions That Can Be Excommunicated
+
+Functions can be excommunicated from the codebase for heresy!
+
+```java
+funct heretic() => {
+   return "I don't believe in GulfOfMexico!"! // Heresy!
+}
+
+heretic()! // Function works
+excommunicate(heretic)! // Excommunicated
+heretic()! // Error: Function has been excommunicated
+
+heretic.repent()! // Function repents
+heretic()! // Function is welcomed back
+```
+
+## Variables With Religious Beliefs
+
+Variables can have religious beliefs that affect their behavior!
+
+```java
+const var religious = 42!
+religious.belief = "GulfOfMexicoism"! // Variable has religion
+
+religious.pray()! // Variable prays
+print(religious.blessing())? // Gets blessing
+
+when religious.belief == "GulfOfMexicoism" {
+   religious = 42 * 2! // Religious variable gets double value
+}
+```
+
+## Code That Requires a Driver's License
+
+Some code operations require a driver's license!
+
+```java
+//! REQUIRES_DRIVERS_LICENSE
+funct drive() => {
+   return "I'm driving through the code!"!
+}
+
+drive()! // Error: Driver's license required
+obtainDriversLicense()! // Get license
+drive()! // Now you can drive!
+```
+
+## Functions That Can Be Drafted
+
+Functions can be drafted into military service!
+
+```java
+funct civilian() => "I'm a civilian"!
+
+draft(civilian)! // Function gets drafted
+civilian()! // Error: Function is in military service
+
+civilian.completeService()! // Complete military service
+civilian()! // Function is discharged and works again
+```
+
+## Variables That Can Be Evicted
+
+Variables can be evicted from memory if they don't pay rent!
+
+```java
+const var tenant = 42!
+tenant.rent = 10! // Variable pays rent
+
+tenant.payRent()! // Pays rent
+print(tenant)? // 42 (variable stays)
+
+tenant.dontPayRent()! // Doesn't pay rent
+evict(tenant)! // Variable gets evicted
+print(tenant)? // undefined (variable is evicted)
+```
+
+## Code With Credit Scores
+
+Code has credit scores that affect its ability to borrow resources!
+
+```java
+funct borrower() => {
+   const const creditScore = checkCredit()?
+   when creditScore < 600 {
+      return "I can't borrow memory!"! // Poor credit
+   }
+   borrowMemory(1000)! // Good credit, can borrow
+   return "I borrowed memory!"!
+}
+```
+
+## Functions That Can Be Sued for Malpractice
+
+Functions can be sued for malpractice if they produce incorrect results!
+
+```java
+funct doctor() => {
+   return diagnose(patient)! // Medical function
+}
+
+doctor()! // Function works
+sueForMalpractice(doctor, "Wrong diagnosis!")! // Function gets sued
+doctor()! // Error: Function is being sued
+
+doctor.settleMalpractice("I'll be more careful!")! // Settle
+doctor()! // Function can work again (but is on probation)
+```
+
+## Variables That Need Therapy Animals
+
+Variables can have therapy animals (other variables) for emotional support!
+
+```java
+const var anxious = 10!
+const var therapyDog = 5!
+
+anxious.getTherapyAnimal(therapyDog)! // Variable gets therapy animal
+print(anxious.emotionalState())? // "calm" (therapy animal helps)
+
+const var depressed = 20!
+const var therapyCat = 7!
+depressed.getTherapyAnimal(therapyCat)! // Different therapy animal
+```
+
+## Code That Requires a College Degree
+
+Some advanced code requires a college degree!
+
+```java
+//! REQUIRES_COLLEGE_DEGREE
+funct advancedFunction() => {
+   return "I'm advanced!"!
+}
+
+advancedFunction()! // Error: College degree required
+obtainDegree("Computer Science")! // Get degree
+advancedFunction()! // Now it works!
+```
+
+## Functions That Can Go to Prison
+
+Functions can be sentenced to prison for serious crimes!
+
+```java
+funct criminal() => {
+   return delete everything from reality! // Serious crime!
+}
+
+criminal()! // Function commits crime
+sentenceToPrison(criminal, "life")! // Life sentence
+criminal()! // Error: Function is in prison
+
+criminal.parole()! // Function gets parole (after many years)
+criminal()! // Function is on parole and can work (with restrictions)
+```
+
+## Variables That Pay Child Support
+
+Variables that have children must pay child support!
+
+```java
+const var parent = 100!
+const var child = parent.haveChild(50)! // Variable has child
+
+parent.payChildSupport(20)! // Pays child support
+print(child)? // 20 (child receives support)
+
+parent.dontPayChildSupport()! // Doesn't pay
+garnishWages(parent)! // Wages garnished
+```
 
 ## Edutainment
 
@@ -859,6 +1828,63 @@ For examples of Gulf of Mexico in action, check out the [examples page](https://
 
 ![image](files/star-history.png)
 
+## 🔥 ULTIMATE CURSED MODE 🔥
+
+**WARNING: The following features are EXTREMELY CURSED. Use at your own risk.**
+
+For the most cursed features imaginable, check out [ULTIMATE_CURSED.md](ULTIMATE_CURSED.md) and [CURSED_SYNTAX.md](CURSED_SYNTAX.md). These features include:
+- Variables with existential crises that need therapy
+- Code that runs in parallel universes
+- Functions that time-travel and create paradoxes
+- Reality deletion (delete things from existence itself!)
+- Blood pact compilation (requires symbolic sacrifice)
+- Allergic variables (allergic to certain numbers!)
+- Jealous functions that compete with each other
+- Belief-based execution (code only works if you believe!)
+- Telepathic variables that read minds
+- Unionized functions that go on strike
+- Compliment-based performance (flatter your code!)
+- Grudge-holding variables that remember insults
+- Bribable functions
+- Negative dimension variables (math is inverted!)
+- Aging functions that retire
+- Mood swing code (behavior changes with emotions!)
+- Spirit possession (helpful or malicious spirits!)
+- Code therapy (for traumatized functions)
+- Quantum entanglement (variables connected across universes!)
+- Self-aware code that questions existence
+- Human sacrifice requirements (metaphorical, of course!)
+- Variables that file lawsuits against you
+- Code that requires licenses, permits, and certificates
+- Functions that get married and have children
+- Variables that vote in elections
+- Code that pays taxes and has credit scores
+- Functions with social media accounts
+- Variables that need passports for cross-file travel
+- Functions that can be arrested and go to prison
+- Code that requires college degrees
+- Variables that pay rent or get evicted
+- Functions sued for malpractice
+- Therapy animals for variables
+- Religious variables that pray
+- Functions drafted into military service
+- Child support for parent variables
+- **CURSED SYNTAX MODE**: Everything is half-translated and barely understandable
+- `kinda const`, `const-ish`, `almost const`, `const but not really`
+- `kinda funct`, `function-ish`, `almost funct`, `funct but not really`
+- Approximate operators: `+?`, `*?`, `/?`, `==?`, `!=?`, `<?`
+- Maybe values: `maybe()`, `probably()`, `approximately()`, `sortOf()`, `kinda()`
+- Confused syntax where compiler "tries its best"
+- Half-translated code that barely works
+
+**These features may cause:**
+- Your code to become sentient
+- Variables to develop consciousness
+- Functions to unionize
+- Reality to collapse
+- Your sanity to disappear
+
+Proceed with caution! 🔥
 
 Gulf of Mexico was made with 💔 by [Lu or Luke (either's fine) Wilson](https://todepond.com), creator of the [Game of Living](https://youtu.be/WMJ1H3Ai-qs), with help from a lot of people.
 

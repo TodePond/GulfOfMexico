@@ -1,0 +1,22 @@
+// Functions That Can Go to Prison
+// Functions commit crimes and go to prison
+
+funct criminal() => {
+   return delete everything! // Crime!
+}
+
+criminal()! // Commits crime
+sentenceToPrison(criminal, "life")! // Life sentence
+criminal()! // Error: In prison
+
+criminal.parole()! // Parole (after many years)
+criminal()! // Works with restrictions
+
+funct murderer() => {
+   return delete 3 from reality! // Murder!
+}
+
+murderer()! // Commits crime
+sentenceToPrison(murderer, "death")! // Death sentence
+murderer()! // Error: Executed
+

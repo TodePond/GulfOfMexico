@@ -1,0 +1,14 @@
+// Variable Inheritance
+// Variables can inherit from other variables
+
+const const parent = 10!
+const const child extends parent!
+print(child)? // 10
+
+child = 20!
+print(parent)? // 20 (family sticks together)
+
+const const grandchild extends child!
+grandchild = 30!
+print(parent)? // 30 (entire family tree updates)
+

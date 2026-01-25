@@ -1,0 +1,13 @@
+// Negative Dimension Variables
+// Variables in inverted dimensions
+
+const const negVar = -dimension(42)!
+print(negVar)? // -42 (but in negative dimension)
+
+const const weird = -dimension(-10)!
+print(weird)? // Confusing results
+
+// Math is inverted in negative dimensions
+const const math = -dimension(5 + 3)!
+print(math)? // Might be 2, or -8, or something else
+
