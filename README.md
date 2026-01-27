@@ -509,6 +509,13 @@ delete class!
 class Player {} // Error: class was deleted
 ```
 
+You're also able to delete a random keyword, which is calculated dynamically every time the program is run. This syntax is heavily inspired by the famous [Schrödinger's cat]([url](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat)) theory. You don't know whether the keywords you've used are removed or not until you run the program and observe the result.
+
+```java
+delete random!
+class Player {} // Valid, hopefully
+```
+
 When perfection is achieved and there is nothing left to `delete`, you can do this:
 
 ```java
