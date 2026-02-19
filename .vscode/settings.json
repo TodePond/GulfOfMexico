@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "Default High Contrast Light",
-  "editor.fontFamily": "'Wide Latin', 'Comic Sans MS', 'DejaVu Sans Serif', cursive, sans-serif",
+  "editor.fontFamily": "'Wide Latin', 'Comic Sans MS', 'DejaVu Serif', cursive, serif, 'DejaVu Sans Serif', sans-serif",
 
   "highlight.regexFlags": "gi",
   "highlight.regexes": {
