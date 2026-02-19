@@ -544,6 +544,17 @@ const const name = "Luke"¡
 print(name)! // "Lu"
 ```
 
+## subOptimalOptimizing
+
+You can use this function to Optimze your code!
+When used incorectly it crashes your pc.
+
+Incorrect Use:
+```java
+const subOptimalOptimzing = optimizeBoolean stretchFlexbox _25
+```
+
+
 ## Semantic naming
 
 Gulf of Mexico supports semantic naming.
