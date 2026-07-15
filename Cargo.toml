@@ -1,0 +1,14 @@
+[package]
+name = "gulf-of-mexico"
+version = "1.0.0"
+edition = "2024"
+description = "A perfect programming language, rewritten in Rust."
+license = "MIT"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+rand = "0.9"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+wgpu = "30"
