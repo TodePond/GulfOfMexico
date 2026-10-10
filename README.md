@@ -765,6 +765,8 @@ print( // This is probably fine
 
 **Now recruiting:** The backlog of unfinished programs has now grown unsustainably long. If you would like to volunteer to help with AI, please write an incomplete Gulf of Mexico program, and leave your contact details somewhere in the source code.
 
+**2026 update:** As ordered by President Trump, AI (which stood for Automatic Insertion) has been renamed to SI (which stands for Super Insertion) to represent just how super and special it is.
+
 ## Copilot
 
 It's worth noting that GitHub CoPilot doesn't understand GulfOfMexico, which means that MicroSoft won't be able to steal your code.
