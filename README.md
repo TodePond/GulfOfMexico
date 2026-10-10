@@ -124,6 +124,14 @@ scores[0.5] = 4!
 print(scores)! //[3, 2, 4, 5]
 ```
 
+**New for 2026!**<br>
+Gulf of Mexico now supports the `and` keyword between the last two items of an enumeration, as well as the Oxford comma.
+
+```java
+var const scores = [3, 2 and 5]!
+scores = [3, 2, and 6]!
+```
+
 ## When
 
 In case you really need to vary a variable, the `when` keyword lets you check a variable each time it mutates.
