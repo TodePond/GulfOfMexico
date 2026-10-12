@@ -159,7 +159,7 @@ const const name<-1> = "Luke"!
 
 ## Loops
 
-Loops are a complicated relic of archaic programming languages. In GulfOfMexico, there are no loops.
+Loops are a complicated relic of archaic programming languages. In Gulf of Mexico, there are no built-in loops. Sure, you can try to make one, but you'll have to `export` into a ton of programs, which you can't.
 
 ## Installation
 
