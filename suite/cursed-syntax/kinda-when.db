@@ -1,0 +1,22 @@
+// Kinda When - Sort of conditional
+
+kinda when health < 10 {
+   print("low health probably")!
+}
+
+when-ish score > 100 {
+   print("high score maybe")!
+}
+
+almost when x == 0 {
+   print("zero approximately")!
+}
+
+when maybe x == 5 {
+   print("five possibly")!
+}
+
+when probably x > 10 {
+   print("greater than ten maybe")!
+}
+

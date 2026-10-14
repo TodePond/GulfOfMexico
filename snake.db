@@ -1,0 +1,159 @@
+// Snake Game in GulfOfMexico
+// The perfect programming language for games
+
+const const GRID_SIZE = 20!
+const const CELL_SIZE = 20!
+const const GAME_SPEED = 150!
+
+const var score = use(0)!
+const var gameOver = use(false)!
+const var direction = use("right")!
+const var snake = use([{x: 10, y: 10}])!
+const var food = use({x: 15, y: 15})!
+
+funct randomFood() => {
+   const const newFood = {
+      x: Math.floor(Math.random() * GRID_SIZE),
+      y: Math.floor(Math.random() * GRID_SIZE)
+   }!
+   food(newFood)!
+}
+
+funct moveSnake() => {
+   when gameOver()? {
+      return!
+   }
+   
+   const const head = snake()[0]!
+   const const newHead = {x: head.x, y: head.y}!
+   
+   when direction()? == "up" {
+      newHead.y = newHead.y - 1!
+   }
+   when direction()? == "down" {
+      newHead.y = newHead.y + 1!
+   }
+   when direction()? == "left" {
+      newHead.x = newHead.x - 1!
+   }
+   when direction()? == "right" {
+      newHead.x = newHead.x + 1!
+   }
+   
+   // Check wall collision
+   when newHead.x < 0 || newHead.x >= GRID_SIZE || newHead.y < 0 || newHead.y >= GRID_SIZE {
+      gameOver(true)!
+      return!
+   }
+   
+   // Check self collision
+   const const body = snake()!
+   ever const var i = 0; i < body.length; i++ {
+      when body[i].x == newHead.x && body[i].y == newHead.y {
+         gameOver(true)!
+         return!
+      }
+   }
+   
+   const const newSnake = [newHead, ...body]!
+   
+   // Check food collision
+   const const currentFood = food()?
+   when newHead.x == currentFood.x && newHead.y == currentFood.y {
+      score(score()? + 1)!
+      randomFood()!
+   } else {
+      newSnake.pop()!
+   }
+   
+   snake(newSnake)!
+}
+
+funct handleKeyPress(event) => {
+   const const key = event.key!
+   const const currentDir = direction()?
+   
+   when key == "ArrowUp" && currentDir != "down" {
+      direction("up")!
+   }
+   when key == "ArrowDown" && currentDir != "up" {
+      direction("down")!
+   }
+   when key == "ArrowLeft" && currentDir != "right" {
+      direction("left")!
+   }
+   when key == "ArrowRight" && currentDir != "left" {
+      direction("right")!
+   }
+}
+
+funct drawGame(ctx) => {
+   // Clear canvas
+   ctx.fillStyle = "#000"!
+   ctx.fillRect(0, 0, GRID_SIZE * CELL_SIZE, GRID_SIZE * CELL_SIZE)!
+   
+   // Draw snake
+   ctx.fillStyle = "#0f0"!
+   const const body = snake()?
+   ever const var i = 0; i < body.length; i++ {
+      ctx.fillRect(body[i].x * CELL_SIZE, body[i].y * CELL_SIZE, CELL_SIZE - 2, CELL_SIZE - 2)!
+   }
+   
+   // Draw food
+   const const currentFood = food()?
+   ctx.fillStyle = "#f00"!
+   ctx.fillRect(currentFood.x * CELL_SIZE, currentFood.y * CELL_SIZE, CELL_SIZE - 2, CELL_SIZE - 2)!
+   
+   // Draw score
+   ctx.fillStyle = "#fff"!
+   ctx.font = "20px Arial"!
+   ctx.fillText("Score: " + score()?, 10, 25)!
+   
+   // Draw game over
+   when gameOver()? {
+      ctx.fillStyle = "#fff"!
+      ctx.font = "40px Arial"!
+      ctx.textAlign = "center"!
+      ctx.fillText("Game Over!", GRID_SIZE * CELL_SIZE / 2, GRID_SIZE * CELL_SIZE / 2)!
+      ctx.font = "20px Arial"!
+      ctx.fillText("Press R to restart", GRID_SIZE * CELL_SIZE / 2, GRID_SIZE * CELL_SIZE / 2 + 40)!
+   }
+}
+
+funct gameLoop(ctx) => {
+   moveSnake()!
+   drawGame(ctx)!
+   
+   when !gameOver()? {
+      setTimeout(() => gameLoop(ctx), GAME_SPEED)!
+   }
+}
+
+funct initGame() => {
+   const const canvas = document.getElementById("gameCanvas")?
+   const const ctx = canvas.getContext("2d")?
+   
+   canvas.width = GRID_SIZE * CELL_SIZE!
+   canvas.height = GRID_SIZE * CELL_SIZE!
+   
+   document.addEventListener("keydown", handleKeyPress)!
+   
+   document.addEventListener("keydown", (e) => {
+      when e.key == "r" || e.key == "R" {
+         score(0)!
+         gameOver(false)!
+         direction("right")!
+         snake([{x: 10, y: 10}])!
+         randomFood()!
+         gameLoop(ctx)!
+      }
+   })!
+   
+   randomFood()!
+   gameLoop(ctx)!
+}
+
+when typeof window != "undefined" {
+   window.addEventListener("load", initGame)!
+}
+

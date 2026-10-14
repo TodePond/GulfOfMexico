@@ -1,0 +1,22 @@
+// Aging Functions
+// Functions age and retire
+
+funct young() => {
+   age = 25! // Young
+   return "I'm energetic!"!
+}
+
+funct old() => {
+   age = 65! // Old
+   return "I'm tired"!
+}
+
+old()! // Works but slow
+old.retire()! // Retires
+old()! // Error: Retired
+
+funct replacement() => {
+   age = 20! // New and young
+   return "I'll take over!"!
+}
+

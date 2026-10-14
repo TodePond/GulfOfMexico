@@ -1,0 +1,17 @@
+// Code That Requires Marriage Certificate
+// Some operations need certificates
+
+funct spouse1() => "Hello"!
+funct spouse2() => "World"!
+
+spouse1.marry(spouse2)! // Error: Certificate required
+obtainMarriageCertificate(spouse1, spouse2)!
+spouse1.marry(spouse2)! // Married!
+
+const var partner1 = 10!
+const var partner2 = 20!
+
+partner1.marry(partner2)! // Needs certificate
+obtainMarriageCertificate(partner1, partner2)!
+partner1.marry(partner2)! // Works
+

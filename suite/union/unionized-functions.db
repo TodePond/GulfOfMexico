@@ -1,0 +1,26 @@
+// Unionized Functions
+// Functions can unionize and strike
+
+funct worker() => {
+   unionize! // Joins union
+   return "I work hard!"!
+}
+
+worker()! // Works fine
+
+worker.overwork()! // Too much work
+worker()! // Function goes on strike
+// Error: On strike!
+
+worker.negotiate("Better conditions!")!
+worker()! // Back to work
+
+funct lazy() => {
+   unionize!
+   return "I demand breaks!"!
+}
+
+lazy()! // Immediately goes on strike
+lazy.negotiate("Unlimited breaks!")!
+lazy()! // Works (but takes many breaks)
+

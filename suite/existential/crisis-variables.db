@@ -1,0 +1,15 @@
+// Existential Crisis Variables
+// Variables question their own existence
+
+const var x = 42!
+x.existentialCrisis()!
+print(x)? // maybe (variable is unsure)
+
+x.therapy()! // Help variable through crisis
+print(x)? // 42 (feels better)
+
+const var y = 10!
+y.existentialCrisis()!
+y.questionExistence()! // "Do I even exist?"
+print(y.isReal())? // maybe
+

@@ -1,0 +1,23 @@
+// Functions That Can Be Sued for Malpractice
+// Functions can be sued
+
+funct doctor() => {
+   return diagnose(patient)! // Medical
+}
+
+doctor()! // Works
+sueForMalpractice(doctor, "Wrong diagnosis!")! // Sued
+doctor()! // Error: Being sued
+
+doctor.settleMalpractice("I'll be careful!")! // Settles
+doctor()! // Works (on probation)
+
+funct lawyer() => {
+   return giveLegalAdvice()! // Legal
+}
+
+lawyer()! // Works
+sueForMalpractice(lawyer, "Bad advice!")! // Sued
+lawyer.settleMalpractice("I apologize!")! // Settles
+lawyer()! // Works
+

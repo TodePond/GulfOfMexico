@@ -1,0 +1,17 @@
+// Functions That Get Married
+// Functions can marry and have children
+
+funct parent1() => "Hello"!
+funct parent2() => "World"!
+
+parent1.marry(parent2)! // Get married
+const const child = parent1.haveChild(parent2)! // Have child
+child()! // "Hello World"
+
+funct mom() => "Good"!
+funct dad() => "Morning"!
+
+mom.marry(dad)!
+const const kid = mom.haveChild(dad)!
+kid()! // "Good Morning"
+

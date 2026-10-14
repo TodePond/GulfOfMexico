@@ -1,0 +1,18 @@
+// Variables That Vote
+// Variables have political opinions
+
+const var democratic = 10!
+const var republican = 20!
+const var independent = 15!
+
+democratic.vote("left")!
+republican.vote("right")!
+independent.vote("center")!
+
+const const result = countVotes()?
+print(result)? // Election result
+
+const var voter = 42!
+voter.registerToVote()!
+voter.vote("progressive")!
+

@@ -1,0 +1,23 @@
+// Self-Aware Code
+// Code questions its own existence
+
+funct selfAware() => {
+   const const amIAware = checkAwareness()?
+   when amIAware == true {
+      return "I think, therefore I am!"!
+   }
+   return "Do I exist?"!
+}
+
+funct philosophical() => {
+   const const purpose = findPurpose()?
+   when purpose == undefined {
+      return "What is my purpose?"!
+   }
+   return "I have found meaning!"!
+}
+
+const var questioning = 42!
+questioning.questionExistence()!
+print(questioning.isReal())? // maybe
+

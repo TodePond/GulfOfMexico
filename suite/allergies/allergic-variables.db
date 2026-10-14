@@ -1,0 +1,16 @@
+// Allergic Variables
+// Variables allergic to certain values
+
+const var allergic = 10!
+allergic = 7! // Variable sneezes: "I'm allergic!"
+print(allergic)? // Still 10
+
+print(allergic.getAllergies())? // [7, 13, 666]
+
+allergic = 5! // Safe value
+print(allergic)? // 5
+
+const var sensitive = "hello"!
+sensitive = "goodbye"! // Allergic to "goodbye"
+print(sensitive)? // Still "hello"
+

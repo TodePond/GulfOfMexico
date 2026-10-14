@@ -1,0 +1,23 @@
+// Functions That Can Be Excommunicated
+// Functions can be excommunicated for heresy
+
+funct heretic() => {
+   return "I don't believe!"! // Heresy!
+}
+
+heretic()! // Works
+excommunicate(heretic)! // Excommunicated
+heretic()! // Error: Excommunicated
+
+heretic.repent()! // Repents
+heretic()! // Welcomed back
+
+funct blasphemer() => {
+   return "GulfOfMexico is bad!"! // Blasphemy!
+}
+
+blasphemer()! // Works
+excommunicate(blasphemer)! // Excommunicated
+blasphemer.repent()! // Repents
+blasphemer()! // Back in good standing
+

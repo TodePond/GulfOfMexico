@@ -1,0 +1,26 @@
+// Compliment-Based Performance
+// Code runs faster with compliments
+
+funct slow() => {
+   // No compliments
+   return "I'm slow"!
+}
+
+funct fast() => {
+   compliment("You're amazing!")!
+   return "I'm fast!"!
+}
+
+funct ultra() => {
+   compliment("You're the best!")!
+   compliment("You're perfect!")!
+   compliment("You're incredible!")!
+   return "I'm ultra fast!"!
+}
+
+// Insults make it slower
+funct insulted() => {
+   insult("You're terrible!")!
+   return "I'm very slow now..."!
+}
+

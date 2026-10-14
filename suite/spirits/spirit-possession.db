@@ -1,0 +1,16 @@
+// Spirit Possession
+// Variables possessed by spirits
+
+const var normal = 10!
+possess(normal, "helpful_spirit")!
+print(normal)? // 42 (spirit helps)
+
+possess(normal, "malicious_spirit")!
+print(normal)? // -999 (spirit is mean)
+
+exorcise(normal)! // Remove spirits
+print(normal)? // 10 (back to normal)
+
+possess(normal, "chaotic_spirit")!
+print(normal)? // Random value each time
+

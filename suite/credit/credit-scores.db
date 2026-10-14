@@ -1,0 +1,24 @@
+// Code With Credit Scores
+// Code has credit that affects borrowing
+
+funct borrower() => {
+   const const credit = checkCredit()?
+   when credit < 600 {
+      return "Poor credit!"! // Can't borrow
+   }
+   borrowMemory(1000)! // Good credit
+   return "Borrowed!"!
+}
+
+funct goodCredit() => {
+   creditScore = 750! // Good credit
+   borrowMemory(5000)! // Can borrow
+   return "Borrowed lots!"!
+}
+
+funct badCredit() => {
+   creditScore = 400! // Bad credit
+   borrowMemory(100)! // Error: Credit too low
+   return "Can't borrow!"!
+}
+

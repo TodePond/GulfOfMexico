@@ -1,0 +1,34 @@
+// Half-Translated Syntax
+// What you write vs what compiler sees
+
+// What you write:
+const const thing = 42!
+
+// What compiler sees:
+// constantly constant thingamajig equals approximately 42 probably!
+
+// What actually happens:
+const const thing = maybe(42)! // Might be 42, might be something else
+
+// What you write:
+funct doThing(x, y) => x + y!
+
+// What compiler sees:
+// functionality do something with x and y maybe add them together probably!
+
+// What actually happens:
+funct doThing(x, y) => maybe(x + y)! // Might add, might not
+
+// What you write:
+when x == 5 {
+   print("five")!
+}
+
+// What compiler sees:
+// if x is maybe equal to 5 probably then do something!
+
+// What actually happens:
+when x ==? 5 { // Approximate equality
+   print("five" maybe)! // Might print "five", might not
+}
+

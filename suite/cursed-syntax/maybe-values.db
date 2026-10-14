@@ -1,0 +1,20 @@
+// Maybe Values - Everything is uncertain
+
+const const maybeValue = maybe(42)! // Might be 42
+print(maybeValue)? // Could be anything
+
+const const probably = probably(10)! // Probably 10
+print(probably)? // Likely 10, but who knows
+
+const const approximately = approximately(5)! // Around 5
+print(approximately)? // Close to 5, maybe
+
+const const sortOf = sortOf("hello")! // Sort of "hello"
+print(sortOf)? // Might be "hello", might be similar
+
+const const kinda = kinda(100)! // Kinda 100
+print(kinda)? // Approximately 100, probably
+
+const const notReally = notReally(true)! // Not really true
+print(notReally)? // Maybe true, maybe false, maybe maybe
+

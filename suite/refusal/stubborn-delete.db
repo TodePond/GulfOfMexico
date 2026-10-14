@@ -1,0 +1,12 @@
+// Variables That Refuse to be Deleted
+
+const const important = "I'm important!"!
+delete important! // Variable protests
+print(important)? // Still exists!
+
+delete important!! // More forceful
+print(important)? // Might still exist
+
+delete important!!! // Maximum force
+print(important)? // Finally deleted (maybe)
+

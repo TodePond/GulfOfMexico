@@ -1,0 +1,17 @@
+// Variables That File Lawsuits
+// Variables can sue you for mistreatment
+
+const var x = 10!
+x = -1! // Abused
+x.fileLawsuit("Emotional distress!")!
+// Error: Lawsuit filed
+
+x.settle("I'll be better!")!
+x = 20! // Works now
+
+const var y = 5!
+y = 0! // Very abusive
+y.fileLawsuit("Severe abuse!")!
+y.settle("I deeply apologize!")!
+y = 10! // Might work
+

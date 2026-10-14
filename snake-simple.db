@@ -1,0 +1,145 @@
+// Simple Snake Game in GulfOfMexico
+// Simplified for the cursed compiler
+
+const const GRID_SIZE = 20!
+const const CELL_SIZE = 20!
+const const GAME_SPEED = 150!
+
+var var score = 0!
+var var gameOver = false!
+var var direction = "right"!
+var var snake = [{x: 10, y: 10}]!
+var var food = {x: 15, y: 15}!
+
+funct randomFood() => {
+   food = {
+      x: Math.floor(Math.random() * GRID_SIZE),
+      y: Math.floor(Math.random() * GRID_SIZE)
+   }!
+}
+
+funct moveSnake() => {
+   when gameOver {
+      return!
+   }
+   
+   var var head = snake[0]!
+   var var newHead = {x: head.x, y: head.y}!
+   
+   when direction == "up" {
+      newHead.y = newHead.y - 1!
+   }
+   when direction == "down" {
+      newHead.y = newHead.y + 1!
+   }
+   when direction == "left" {
+      newHead.x = newHead.x - 1!
+   }
+   when direction == "right" {
+      newHead.x = newHead.x + 1!
+   }
+   
+   when newHead.x < 0 || newHead.x >= GRID_SIZE || newHead.y < 0 || newHead.y >= GRID_SIZE {
+      gameOver = true!
+      return!
+   }
+   
+   var var newSnake = [newHead]!
+   var var i = 0!
+   when i < snake.length {
+      newSnake.push(snake[i])!
+      i = i + 1!
+   }
+   
+   when newHead.x == food.x && newHead.y == food.y {
+      score = score + 1!
+      randomFood()!
+   } else {
+      newSnake.pop()!
+   }
+   
+   snake = newSnake!
+}
+
+funct handleKeyPress(event) => {
+   var var key = event.key!
+   
+   when key == "ArrowUp" && direction != "down" {
+      direction = "up"!
+   }
+   when key == "ArrowDown" && direction != "up" {
+      direction = "down"!
+   }
+   when key == "ArrowLeft" && direction != "right" {
+      direction = "left"!
+   }
+   when key == "ArrowRight" && direction != "left" {
+      direction = "right"!
+   }
+}
+
+funct drawGame(ctx) => {
+   ctx.fillStyle = "#000"!
+   ctx.fillRect(0, 0, GRID_SIZE * CELL_SIZE, GRID_SIZE * CELL_SIZE)!
+   
+   ctx.fillStyle = "#0f0"!
+   var var i = 0!
+   when i < snake.length {
+      ctx.fillRect(snake[i].x * CELL_SIZE, snake[i].y * CELL_SIZE, CELL_SIZE - 2, CELL_SIZE - 2)!
+      i = i + 1!
+   }
+   
+   ctx.fillStyle = "#f00"!
+   ctx.fillRect(food.x * CELL_SIZE, food.y * CELL_SIZE, CELL_SIZE - 2, CELL_SIZE - 2)!
+   
+   ctx.fillStyle = "#fff"!
+   ctx.font = "20px Arial"!
+   ctx.fillText("Score: " + score, 10, 25)!
+   
+   when gameOver {
+      ctx.fillStyle = "#fff"!
+      ctx.font = "40px Arial"!
+      ctx.textAlign = "center"!
+      ctx.fillText("Game Over!", GRID_SIZE * CELL_SIZE / 2, GRID_SIZE * CELL_SIZE / 2)!
+      ctx.font = "20px Arial"!
+      ctx.fillText("Press R to restart", GRID_SIZE * CELL_SIZE / 2, GRID_SIZE * CELL_SIZE / 2 + 40)!
+   }
+}
+
+funct gameLoop(ctx) => {
+   moveSnake()!
+   drawGame(ctx)!
+   
+   when !gameOver {
+      setTimeout(() => gameLoop(ctx), GAME_SPEED)!
+   }
+}
+
+funct initGame() => {
+   var var canvas = document.getElementById("gameCanvas")!
+   var var ctx = canvas.getContext("2d")!
+   
+   canvas.width = GRID_SIZE * CELL_SIZE!
+   canvas.height = GRID_SIZE * CELL_SIZE!
+   
+   document.addEventListener("keydown", handleKeyPress)!
+   
+   document.addEventListener("keydown", (e) => {
+      when e.key == "r" || e.key == "R" {
+         score = 0!
+         gameOver = false!
+         direction = "right"!
+         snake = [{x: 10, y: 10}]!
+         randomFood()!
+         gameLoop(ctx)!
+      }
+   })!
+   
+   randomFood()!
+   gameLoop(ctx)!
+}
+
+when typeof window != "undefined" {
+   window.addEventListener("load", initGame)!
+}
+

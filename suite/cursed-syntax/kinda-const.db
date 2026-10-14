@@ -1,0 +1,14 @@
+// Kinda Const - Sort of constant, maybe
+
+kinda const name = "Luke"! // Might be const
+name = "Lu"! // Might work, might not
+
+const-ish value = 10! // Const-like
+value = 20! // Behaves like const, but not really
+
+almost const data = [1, 2, 3]! // Nearly constant
+data.push(4)! // Might work if you ask nicely
+
+const but not really x = 5! // Const in name only
+x = 10! // Definitely works (it's lying about being const)
+

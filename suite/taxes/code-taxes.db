@@ -1,0 +1,17 @@
+// Code That Pays Taxes
+// Code must pay taxes on resources
+
+funct expensive() => {
+   const const tax = calculateTax(executionTime, memoryUsed)!
+   payTax(tax)! // Pays taxes
+   return "I paid!"!
+}
+
+funct taxEvader() => {
+   return "I won't pay!"!
+}
+
+taxEvader()! // Doesn't pay
+audit(taxEvader)! // Gets audited
+taxEvader()! // Runs slower now
+

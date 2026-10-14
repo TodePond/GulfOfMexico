@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Snake Game - GulfOfMexico</title>
+   <style>
+      body {
+         margin: 0;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         min-height: 100vh;
+         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+         font-family: 'Arial', sans-serif;
+      }
+      
+      .container {
+         background: white;
+         padding: 30px;
+         border-radius: 20px;
+         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+         text-align: center;
+      }
+      
+      h1 {
+         color: #333;
+         margin-bottom: 10px;
+      }
+      
+      .subtitle {
+         color: #666;
+         margin-bottom: 20px;
+         font-style: italic;
+      }
+      
+      canvas {
+         border: 3px solid #333;
+         border-radius: 10px;
+         background: #000;
+         display: block;
+         margin: 20px auto;
+      }
+      
+      .instructions {
+         margin-top: 20px;
+         color: #555;
+         line-height: 1.6;
+      }
+      
+      .instructions strong {
+         color: #667eea;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <h1>🐍 Snake Game</h1>
+      <p class="subtitle">Built with GulfOfMexico - Compiled from .db to .js!</p>
+      <canvas id="gameCanvas"></canvas>
+      <div class="instructions">
+         <p><strong>Controls:</strong></p>
+         <p>Use Arrow Keys to move the snake</p>
+         <p>Press <strong>R</strong> to restart after game over</p>
+         <p>Eat the red food to grow and increase your score!</p>
+      </div>
+   </div>
+   
+   <script src="snake-working.js"></script>
+</body>
+</html>
+

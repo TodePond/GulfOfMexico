@@ -1,0 +1,16 @@
+// Parallel Universe Execution
+// Code runs in infinite parallel universes
+
+const const result = parallelUniverse(() => {
+   return Math.random()!
+})!
+print(result)? // Different in each universe
+
+const const universe = getCurrentUniverse()!
+print(universe)? // Which universe are we in?
+
+const const allResults = getAllUniverses(() => {
+   return "Hello"!
+})!
+print(allResults)? // Results from all universes
+

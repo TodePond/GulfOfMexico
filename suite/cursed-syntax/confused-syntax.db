@@ -1,0 +1,27 @@
+// Confused Syntax - Compiler tries its best
+
+// Const that forgot syntax
+const forgot const name = "Luke"! // Forgot order
+print(name)? // Might work, might not
+
+// Function with wrong syntax
+funct confused(x, y) => {
+   // What am I doing?
+   return x +? y maybe! // Confused return
+}
+
+// When with identity crisis
+when maybe probably x == 5 {
+   print("confused")! // Multiple uncertainty
+}
+
+// Variable that doesn't know what it is
+const var var confused = 10! // Too many vars
+print(confused)? // Compiler: "I'll try my best..."
+
+// Function that forgot how to function
+funct forgot() => {
+   // Am I a function? What do I do?
+   return maybe("help")! // Asks for help
+}
+
