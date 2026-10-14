@@ -560,6 +560,19 @@ const const bHappy = true!
 const const g_fScore = 4.5!
 ```
 
+**New for 2026:** Additionally, you can make nationals with an inverted exclamation mark appended to the start of the global variable.
+```java
+const const ¡g_fScore = 4.5! //national
+```
+
+You can also make national armies, which are stronger with the more inverted exclamation marks you add.
+```java
+const const ¡g_thisVar = 4.5! //national, weak
+const const ¡¡¡¡¡¡¡¡¡¡g_thatVar = 4.5! //national, strong
+```
+
+TODO: Make continents and cities.
+
 ## Reversing
 
 You can reverse the direction of your code.
