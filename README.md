@@ -209,6 +209,21 @@ You can also use number names.
 print(one + two)! //3
 ```
 
+And Roman numerals!
+
+```java
+print(II + V)! //7
+```
+
+Note that whenever you add Roman numerals, you get an Arabic numeral. Also note that roman numerals and arabic numerals do not work with each other. Thus, we have added two new functions: toRoman and toArabic.
+
+```java
+print(toRoman(7))! //VII
+print(toArabic(XXI))! //21
+print(toRoman(7) + II)! //9
+print(II + 4)! // This is not ok
+```
+
 ## Indents
 
 When it comes to indentation, Gulf of Mexico strikes a happy medium that can be enjoyed by everyone: All indents must be 3 spaces long.
