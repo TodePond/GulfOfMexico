@@ -767,6 +767,20 @@ print( // This is probably fine
 
 **2026 update:** As ordered by President Trump, AI (which stood for Automatic Insertion) has been renamed to SI (which stands for Super Insertion) to represent just how super and special it is.
 
+## Waiting
+
+DreamBerd also supports waiting:
+```java
+...
+print("Luke")!
+```
+
+The amount of periods depends on how long it should wait in milliseconds as this is the best time format
+```java
+....................
+print("Runs after 0.02 seconds")!
+```
+
 ## Copilot
 
 It's worth noting that GitHub CoPilot doesn't understand GulfOfMexico, which means that MicroSoft won't be able to steal your code.
