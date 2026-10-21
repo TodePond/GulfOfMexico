@@ -493,6 +493,42 @@ Date.now() -= 3600000!
 **Important!**<br>
 Please remember to do this when the clocks change.
 
+## Sleep
+
+You can use `sleep()` to do stuff later.
+
+```java
+print("Hello")!
+sleep(5)!
+print("Hello 5 seconds later")!
+```
+
+You can also use `sleep()` to do stuff before.
+
+```java
+print("Hello 5 seconds later")!
+sleep(-5)!
+print("Hello")!
+```
+
+This is useful if you want to warn your past self of future mistakes.
+
+```java
+const const warned = false!
+const var timeLeft = 1! // Should NEVER become zero
+
+if (;warned) {
+   timeLeft -= 1!
+}
+
+if (timeLeft = 0) {
+   sleep(-1)!
+   const const warned = true!!
+}
+```
+
+**Note:** Sometimes the program is really sleepy and wont wake up.
+
 ## Delete
 
 To avoid confusion, the `delete` statement only works with primitive values like numbers, strings, and booleans.
