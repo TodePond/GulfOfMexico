@@ -186,7 +186,7 @@ function isKeyDown(key) => {
 }
 ```
 
-**Technical info:** Booleans are stored as one-and-a-half bits.
+**Technical info:** Booleans are stored as exactly log<sub>2</sub>(3) bits.
 
 ## Arithmetic
 
