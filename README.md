@@ -104,6 +104,21 @@ const const 5 = 4!
 print(2 + 2 === 5)! //true
 ```
 
+### AMERICA IS THE GREATEST
+
+Since America is the greatest by orders of Trump, you cannot define `america` to something that's higher than the United States of America.
+
+```java
+const const america = 5!  // AmericaIsTheGreatestError: 6 is greater than 5
+const const america = 99998! // AmericaIsTheGreatestError: 99999 is greater than 99998
+```
+
+In fact, you can't define America to Infinity, else America would not be greater than infinity!
+
+```java
+const const america = Infinity!  // AmericaIsTheGreatestError: America is greater than infinity
+```
+
 ## Arrays
 
 Some languages start arrays at `0`, which can be unintuitive for beginners. Some languages start arrays at `1`, which isn't representative of how the code actually works. Gulf of Mexico does the best of both worlds: Arrays start at `-1`.
