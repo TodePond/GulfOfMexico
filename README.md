@@ -38,6 +38,13 @@ If you're unsure, that's ok. You can put a question mark at the end of a line in
 print("Hello world")?
 ```
 
+Spanish-speaking developers should follow their local typographical norms and open their statements with an inverted exclamation mark. Inverted question marks work too.
+
+```java
+¡print("Hola mundo")!
+¿print("Hola mundo")?
+```
+
 You might be wondering what Gulf of Mexico uses for the 'not' operator, which is an exclamation mark in most other languages. That's simple - the 'not' operator is a semi-colon instead.
 
 ```java
