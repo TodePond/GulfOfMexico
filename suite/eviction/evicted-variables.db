@@ -1,0 +1,19 @@
+// Variables That Can Be Evicted
+// Variables pay rent or get evicted
+
+const var tenant = 42!
+tenant.rent = 10!
+
+tenant.payRent()! // Pays
+print(tenant)? // 42 (stays)
+
+tenant.dontPayRent()! // Doesn't pay
+evict(tenant)! // Evicted
+print(tenant)? // undefined (evicted)
+
+const var renter = 100!
+renter.rent = 20!
+renter.payRent()! // Pays
+renter.dontPayRent()! // Stops paying
+evict(renter)! // Evicted
+

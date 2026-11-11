@@ -1,0 +1,24 @@
+// Mood Swing Code
+// Code behavior changes with mood
+
+const var moody = "Hello"!
+moody.mood = "happy"!
+print(moody)! // "Hello! 😊"
+
+moody.mood = "angry"!
+print(moody)! // "HELLO!!! 😠"
+
+moody.mood = "depressed"!
+print(moody)! // "hello... 😢"
+
+moody.mood = "excited"!
+print(moody)! // "HELLO!!! WOW!!!"
+
+funct emotional() => {
+   mood = "sad"!
+   return "I'm sad"!
+}
+
+emotional.mood = "happy"!
+emotional()! // Returns "I'm happy!"
+

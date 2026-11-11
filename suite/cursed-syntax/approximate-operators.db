@@ -1,0 +1,21 @@
+// Approximate Operators
+// Everything is kinda sort of
+
+const const x = 5 +? 3! // Might add, might subtract
+print(x)? // Could be 8, 2, or something else
+
+const const y = 10 *? 2! // Approximately multiply
+print(y)? // Probably 20, maybe
+
+const const z = 15 /? 3! // Sort of divide
+print(z)? // Approximately 5
+
+const const a = 10 ==? 10! // Approximate equality
+print(a)? // Maybe true, maybe false, maybe maybe
+
+const const b = 5 !=? 5! // Kinda not equal
+print(b)? // Possibly false, possibly true
+
+const const c = 10 <? 20! // Approximately less than
+print(c)? // Probably true, maybe
+

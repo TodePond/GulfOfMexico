@@ -1,0 +1,17 @@
+// Variables That Pay Child Support
+// Parent variables pay support
+
+const var parent = 100!
+const var child = parent.haveChild(50)! // Has child
+
+parent.payChildSupport(20)! // Pays
+print(child)? // 20 (child gets support)
+
+parent.dontPayChildSupport()! // Doesn't pay
+garnishWages(parent)! // Wages garnished
+
+const var mom = 200!
+const var kid = mom.haveChild(30)!
+mom.payChildSupport(50)! // Pays
+kid? // Gets support
+

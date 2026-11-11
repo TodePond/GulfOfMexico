@@ -1,0 +1,18 @@
+// Const Confusion - Const that gets confused
+
+const const confused = 10! // Tries to be const
+confused = 20! // Error? Maybe? Actually works sometimes?
+print(confused)? // Could be 10, 20, or something else
+
+const var forgot = 42!
+forgot.remember()! // Remembers it should be const
+forgot = 100! // Error: "I'm const, remember?"
+
+const const crisis = 5!
+crisis.existentialCrisis()! // Questions if it's really const
+crisis = 10! // Might work if const is having a crisis
+
+const const identity = "constant"!
+identity.identityCrisis()! // Identity crisis
+print(identity)? // Might be "constant", might be something else
+

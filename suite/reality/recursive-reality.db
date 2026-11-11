@@ -1,0 +1,14 @@
+// Recursive Reality Checks
+// Check if you're in a simulation
+
+const const realityLevel = checkReality()!
+print(realityLevel)? // How deep are we?
+
+when realityLevel > 50 {
+   print("Reality stack overflow!")!
+   exitReality()!
+}
+
+const const isReal = amIReal()?
+print(isReal)? // maybe
+

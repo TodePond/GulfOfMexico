@@ -1,0 +1,12 @@
+// Reality Deletion
+// Delete things from reality itself
+
+delete 3 from reality! // Number 3 no longer exists
+print(2 + 1)? // Error: 3 doesn't exist
+
+delete "Tuesday" from reality! // Tuesday is gone
+print(Date.today())? // Skips Tuesday
+
+delete delete from reality! // Delete delete itself
+// Now you can't delete anything!
+

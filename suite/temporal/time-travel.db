@@ -1,0 +1,16 @@
+// Temporal Debugging Example
+// Travel through time to debug your code
+
+const var x = 5!
+x = 10!
+x = 15!
+
+debugger.timeTravel(-2)! // Go back 2 lines
+print(x)? // 5 (from the past)
+
+debugger.timeTravel(0)! // Back to present
+print(x)? // 15
+
+debugger.timeTravel(10)! // See the future
+print(x)? // maybe (future is uncertain)
+

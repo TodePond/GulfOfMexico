@@ -1,0 +1,16 @@
+// Variables That Need Passports
+// Variables need passports to cross files
+
+// File 1
+const var traveler = 42!
+traveler.getPassport()!
+
+// File 2 (different file)
+import traveler! // Error: Passport required
+traveler.showPassport()!
+print(traveler)? // Works now
+
+const var tourist = 100!
+tourist.getVisa("File2")! // Get visa
+tourist.crossBorder()! // Cross file boundary
+

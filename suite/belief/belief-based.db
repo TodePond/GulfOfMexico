@@ -1,0 +1,19 @@
+// Belief-Based Execution
+// Code only works if you believe
+
+funct magic() => {
+   believe! // Must believe
+   return "It works!"!
+}
+
+// If you doubt, it fails
+funct doubt() => {
+   doubt! // Doesn't work
+   return undefined!
+}
+
+funct faith() => {
+   believe with all your heart!
+   return "Miracles happen!"!
+}
+

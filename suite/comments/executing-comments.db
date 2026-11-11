@@ -1,0 +1,13 @@
+// Comments That Execute
+// Comments are suggestions the code might follow
+
+// This should print "Hello"
+print("Goodbye")! // Might print "Hello" instead
+
+//! This MUST print "Hello"
+print("Goodbye")! // Error if code refuses
+
+// Maybe add 1?
+const var x = 5!
+x++! // Code might add 1, respecting the comment
+

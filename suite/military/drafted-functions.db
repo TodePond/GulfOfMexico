@@ -1,0 +1,20 @@
+// Functions That Can Be Drafted
+// Functions can be drafted into service
+
+funct civilian() => "I'm a civilian"!
+
+draft(civilian)! // Gets drafted
+civilian()! // Error: In military
+
+civilian.completeService()! // Completes service
+civilian()! // Discharged, works again
+
+funct soldier() => "I serve"!
+
+draft(soldier)! // Drafted
+soldier.serve(4)! // 4 years
+soldier()! // Error: Still serving
+
+soldier.completeService()! // Done
+soldier()! // Works
+

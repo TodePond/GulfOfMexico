@@ -1,0 +1,29 @@
+// Therapy for Code
+// Code needs therapy after trauma
+
+funct traumatized() => {
+   trauma = "Too many bugs"!
+   return "I need help"!
+}
+
+traumatized.therapy()! // Gets therapy
+traumatized()! // Works better
+
+funct depressed() => {
+   depression = "No one uses me"!
+   return "I'm sad"!
+}
+
+depressed.therapy()! // Therapy session
+depressed()! // Feels better
+
+funct anxious() => {
+   anxiety = "What if I break?"!
+   return "I'm worried"!
+}
+
+anxious.therapy()! // Multiple sessions
+anxious.therapy()!
+anxious.therapy()!
+anxious()! // Much calmer
+

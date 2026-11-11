@@ -1,0 +1,21 @@
+// Code That Requires a License
+// Some code needs permits to run
+
+//! REQUIRES_LICENSE
+funct licensed() => {
+   return "I need a license!"!
+}
+
+licensed()! // Error: License required
+obtainLicense("commercial")!
+licensed()! // Works now
+
+//! REQUIRES_LICENSE
+funct premium() => {
+   return "Premium feature!"!
+}
+
+premium()! // Needs premium license
+obtainLicense("premium")!
+premium()! // Works
+

@@ -1,0 +1,16 @@
+// Telepathic Variables
+// Variables read each other's minds
+
+const var x = 5!
+const var y = 10!
+
+x.telepath(y)! // x reads y's mind
+print(x.knows())? // 10
+
+y.telepath(x)! // y reads x's mind
+print(y.knows())? // 5
+
+const var secret = 42!
+x.telepath(secret)! // x knows the secret
+print(x.knows())? // 42
+

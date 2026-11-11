@@ -1,0 +1,19 @@
+// Kinda Functions - Sort of functions
+
+kinda funct add(x, y) => x + y! // Acts like a function, mostly
+add(2, 3)? // Might return 5, might not
+
+function-ish multiply(a, b) => a * b! // Behaves functionally
+multiply(4, 5)? // Probably 20, maybe
+
+almost funct subtract(x, y) => x - y! // Almost works
+subtract(10, 3)? // Approximately 7
+
+funct but not really divide(a, b) => a / b! // Pretends to be function
+divide(10, 2)? // Might divide, might do something else
+
+funct confused() => {
+   // What was I supposed to do again?
+   return maybe("something")! // Returns something, probably
+}
+

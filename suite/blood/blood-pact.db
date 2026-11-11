@@ -1,0 +1,15 @@
+// Blood Pact Compilation
+// Requires sacrifice for maximum performance
+
+//! BLOOD_PACT_REQUIRED
+funct ultraFast() => {
+   sacrifice("metaphorical")! // Symbolic sacrifice
+   return "Lightspeed!"!
+}
+
+//! BLOOD_PACT_REQUIRED
+funct ultimatePower() => {
+   sacrifice("symbolic_human")!
+   return "I have power!"!
+}
+

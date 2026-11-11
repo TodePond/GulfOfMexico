@@ -1,0 +1,18 @@
+// Jealous Functions
+// Functions compete with each other
+
+funct add(a, b) => a + b!
+funct multiply(a, b) => a * b!
+
+add.setRival(multiply)! // add is jealous
+add(2, 3)! // Might return 6 to match multiply!
+
+multiply.setRival(add)! // Now multiply is jealous too
+multiply(2, 3)! // Competition intensifies!
+
+funct slow() => "slow"!
+funct fast() => "fast"!
+
+slow.getJealous(fast)! // slow tries to be fast
+slow()! // Might return "fast"!
+

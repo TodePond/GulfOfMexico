@@ -1,0 +1,20 @@
+// Code That Requires Building Permits
+// Complex structures need permits
+
+//! REQUIRES_BUILDING_PERMIT
+class Skyscraper {
+   const var floors = 100!
+}
+
+// Error: Permit required
+obtainBuildingPermit("commercial")!
+const const building = new Skyscraper()! // Can build now
+
+//! REQUIRES_BUILDING_PERMIT
+class Mansion {
+   const var rooms = 50!
+}
+
+obtainBuildingPermit("residential")!
+const const house = new Mansion()!
+

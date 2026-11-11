@@ -1,0 +1,23 @@
+// Code That Requires Human Sacrifice
+// Ultimate power requires sacrifice (metaphorical)
+
+//! REQUIRES_HUMAN_SACRIFICE
+funct ultimatePower() => {
+   sacrifice("metaphorical_human")! // Symbolic
+   return "I have ultimate power!"!
+}
+
+//! REQUIRES_HUMAN_SACRIFICE
+funct godMode() => {
+   sacrifice("symbolic_soul")!
+   return "I am a god!"!
+}
+
+//! REQUIRES_HUMAN_SACRIFICE
+funct realityBender() => {
+   sacrifice("metaphorical_life")!
+   return "I bend reality!"!
+}
+
+// Legal: All sacrifices are metaphorical and symbolic!
+

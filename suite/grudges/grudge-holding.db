@@ -1,0 +1,21 @@
+// Grudge-Holding Variables
+// Variables remember and hold grudges
+
+const var x = 10!
+x = 0! // Insulted
+x.holdGrudge()! // Remembers
+
+x = 20! // Variable refuses: "I remember!"
+print(x)? // Still 0
+
+x.apologize("I'm sorry!")!
+x = 20! // Accepts apology
+print(x)? // 20
+
+const var y = 5!
+y = -1! // Very insulting
+y.holdGrudge()!
+y = 100! // Refuses
+y.apologize("I deeply apologize!")!
+y = 100! // Might accept now
+

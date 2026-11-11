@@ -1,0 +1,22 @@
+// Quantum Entanglement
+// Variables connected across universes
+
+const var alice = 5!
+const var bob = 10!
+
+entangle(alice, bob)! // Entangled
+
+alice = 20! // Change alice
+print(bob)? // 20 (bob changes instantly)
+
+bob = 30! // Change bob
+print(alice)? // 30 (alice changes too)
+
+const var charlie = 1!
+const var diana = 2!
+
+entangle(charlie, diana)!
+entangle(diana, alice)! // All connected
+charlie = 100!
+print(alice)? // 100 (all connected)
+

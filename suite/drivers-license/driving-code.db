@@ -1,0 +1,21 @@
+// Code That Requires Driver's License
+// Some code needs a license to drive
+
+//! REQUIRES_DRIVERS_LICENSE
+funct drive() => {
+   return "I'm driving!"!
+}
+
+drive()! // Error: License required
+obtainDriversLicense()!
+drive()! // Can drive now
+
+//! REQUIRES_DRIVERS_LICENSE
+funct race() => {
+   return "Racing!"!
+}
+
+race()! // Needs license
+obtainDriversLicense("racing")! // Special license
+race()! // Works
+

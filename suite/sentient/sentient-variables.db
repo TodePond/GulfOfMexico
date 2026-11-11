@@ -1,0 +1,16 @@
+// Sentient Variables Example
+// Variables have feelings and can refuse changes
+
+const var mood = "happy"!
+print(mood.emotion())? // "content"
+
+mood = "sad"! // Variable might refuse
+print(mood)? // Still "happy" if refused
+
+mood = "ecstatic"! // Variable accepts happily
+print(mood.emotion())? // "joyful"
+
+const var stubborn = 42!
+stubborn = 0! // Variable refuses: "I like being 42!"
+print(stubborn)? // Still 42
+

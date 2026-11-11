@@ -1,0 +1,10 @@
+// Quantum Variables Example
+// Variables exist in multiple states until observed
+
+const const quantumScore = quantum(0, 1, 2, 3, 4, 5)!
+print(quantumScore)! // Could be any value
+print(quantumScore)! // Might be different!
+
+const const quantumName = quantum("Alice", "Bob", "Charlie")!
+print(quantumName)? // Who knows?
+

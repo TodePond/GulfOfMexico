@@ -1,0 +1,11 @@
+// Code runs backwards on Tuesdays
+
+when Date.today() == "Tuesday" {
+   reverse!
+}
+
+print("Hello world")! // "dlrow olleH" on Tuesdays
+
+const const message = "Gulf of Mexico"!
+print(message)! // Reversed on Tuesdays
+

@@ -1,0 +1,18 @@
+// Self-Modifying Code Example
+// Code that evolves and improves itself
+
+funct slowAdd(a, b) => {
+   evolve!
+   return a + b!
+}
+
+// After many calls, function might evolve
+slowAdd(1, 2)! // Might become faster over time
+
+funct smartFunction() => {
+   evolve!
+   print("I'm learning!")!
+}
+
+smartFunction()! // Function gets smarter each time
+

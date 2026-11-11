@@ -1,0 +1,21 @@
+// Code That Requires College Degree
+// Advanced code needs education
+
+//! REQUIRES_COLLEGE_DEGREE
+funct advanced() => {
+   return "I'm advanced!"!
+}
+
+advanced()! // Error: Degree required
+obtainDegree("Computer Science")! // Get degree
+advanced()! // Works
+
+//! REQUIRES_COLLEGE_DEGREE
+funct phd() => {
+   return "I need PhD!"!
+}
+
+phd()! // Needs PhD
+obtainDegree("PhD")! // Get PhD
+phd()! // Works
+

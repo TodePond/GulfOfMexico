@@ -1,0 +1,18 @@
+// Variables With Religious Beliefs
+// Variables have religions
+
+const var religious = 42!
+religious.belief = "GulfOfMexicoism"! // Has religion
+
+religious.pray()! // Prays
+print(religious.blessing())? // Gets blessing
+
+when religious.belief == "GulfOfMexicoism" {
+   religious = 42 * 2! // Double value
+}
+
+const var believer = 10!
+believer.belief = "Codeism"!
+believer.pray()!
+print(believer.faith())? // Faith level
+
