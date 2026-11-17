@@ -585,9 +585,9 @@ className Player {
 
 In response to some recent criticism about this design decision, we would like to remind you that this is part of the JavaScript specification, and therefore — out of our control.
 
-## DBX
+## GOMX
 
-You can embed DBX in GulfOfMexico. It's just GulfOfMexico. And it's also just HTML.
+You can embed GOMX in GulfOfMexico. It's just GulfOfMexico. And it's also just HTML.
 
 ```java
 funct App() => {
@@ -595,7 +595,7 @@ funct App() => {
 }
 ```
 
-**Warning:** As you know, `class` is already a keyword in GulfOfMexico, so you can't use it within DBX.
+**Warning:** As you know, `class` is already a keyword in GulfOfMexico, so you can't use it within GOMX.
 
 ```java
 funct App() => {
